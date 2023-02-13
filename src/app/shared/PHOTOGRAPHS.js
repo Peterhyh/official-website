@@ -28,7 +28,8 @@ export const PHOTOGRAPHS = [
         id: 2,
         name: 'Hideout',
         image: pic3,
-        featured: true,
+        featured: false,
+        special: true,
         description: "Alone time.",
         credit:
             'Photographed by Peter Huynh'
@@ -38,7 +39,6 @@ export const PHOTOGRAPHS = [
         name: 'VIP',
         image: pic4,
         featured: false,
-        special: true,
         description: "Clean and stylish.",
         credit: 'Photographed by Peter Huynh'
     },

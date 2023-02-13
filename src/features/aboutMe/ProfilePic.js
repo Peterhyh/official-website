@@ -1,5 +1,5 @@
 import me from '../../app/assets/img/me.jpg';
-import { Card, CardImg, CardBody, CardText, Row, Container, Col } from 'reactstrap';
+import { Card, CardImg, Row, Container, Col } from 'reactstrap';
 
 const ProfilePic = () => {
     return (
@@ -8,11 +8,6 @@ const ProfilePic = () => {
                 <Col md='5'>
                     <Card>
                         <CardImg src={me} alt='Photo of Peter Huynh' />
-                        <CardBody>
-                            <CardText>
-                                My name is Peter Huynh
-                            </CardText>
-                        </CardBody>
                     </Card>
                 </Col>
             </Row>

@@ -1,5 +1,5 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -7,7 +7,7 @@ h1,
 h2,
 h3,
 .card-body .card-title {
-  font-family: 'Lobster', cursive;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .card-title {
@@ -28,7 +28,7 @@ h3,
 }
 
 h2 {
-  color: #3046c5;
+  color: #fff
 }
 
 .card-img-overlay .card-title {
@@ -98,4 +98,9 @@ h2 {
 
 .image-title {
   position: relative;
+}
+
+h3,
+p {
+  color: #fff;
 }
