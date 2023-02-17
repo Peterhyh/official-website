@@ -1,38 +1,56 @@
-import {Formik} from 'formik';
+import { Formik, Form, Field } from 'formik';
+import { Button, Label, Col, FormGroup } from 'reactstrap';
 
 const initialValues = {
     email: '',
     message: ''
 };
 
+const handleSubmit = (values) => {
+    console.log(values);
+};
 
 const ContactForm = () => {
-    return(
+    return (
         <Formik
-            initialValues = {initialValues}
-            validate = {validateForm}
-            onSubmit = {handleSubmit}
+            initialValues={{
+                email: '',
+                message: ''
+            }}
         >
-            {
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <input 
-                            value = {values.email}
-                            name = 'email'
-                            onChange = {handleChange}
-                            placeholder = 'Your email'
+            <Form>
+                <FormGroup row>
+                    <Label htmlFor='email' md='7'>
+                        <Field
+                            name='agree'
+                            type='checkbox'
+                            row='5'
+                            className='form-control'
+                            placeholder='email'
+                        />{' '}
+                        Email
+                    </Label>
+                    <Col>
+
+                    </Col>
+                </FormGroup>
+                <FormGroup row>
+                    <Label htmlFor='message' md='10'>
+                        <Field
+                            name='message'
+                            as='textarea'
+                            rows='12'
+                            className='form-control'
+                            placeholder='message'
                         />
-                    </div>
-                    <div>
-                        <input
-                            value = {values.message}
-                            name = 'message'
-                            onChange = {handleChange}
-                            placeholder = 'Enter message...'
-                        />
-                    </div>
-                </form>
-            }
+                        Message
+                    </Label>
+                    <Col>
+
+                    </Col>
+
+                </FormGroup>
+            </Form>
         </Formik>
     )
 };
