@@ -4,9 +4,8 @@ import ContactForm from '../components/ContactForm';
 
 const ContactPage = () => {
     return (
-        <Container>
-            <SubHeader current='Contact' />
-            <h3>Contact Page</h3>
+        <Container >
+            <SubHeader current='Contact Me' />
             <ContactForm />
         </Container>
     )

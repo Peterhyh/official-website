@@ -1,16 +1,13 @@
-import { Container } from 'reactstrap';
-import DisplayList from '../features/homeDisplay/DisplayList';
-import SubHeader from '../components/SubHeader';
-
-
+import { Container, Row, Col, Card } from 'reactstrap';
+import { ProfileMessage } from '../features/aboutMe/ProfileContent';
+import ProfileContent from '../features/aboutMe/ProfileContent';
 
 const HomePage = () => {
-
     return (
-        <Container>
-            <SubHeader current='Home' />
-            <DisplayList />
-        </Container>
+        <>
+            <div className='bg-image'></div>
+            <ProfileContent />
+        </>
     )
 };
 

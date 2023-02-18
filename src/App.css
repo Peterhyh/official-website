@@ -1,6 +1,5 @@
 body {
   font-family: 'Montserrat', sans-serif;
-
 }
 
 h1,
@@ -68,8 +67,15 @@ h2 {
   max-width: 12rem;
 }
 
-.navbar-dark {
-  background-color: #901cad;
+.nav {
+  transition-timing-function: ease-in;
+  transition: 0.9s;
+  position: absolute;
+  width: 100%;
+
+}
+
+.navbar_dark {
   background-image: linear-gradient(to right, #565859, #1E1E1E);
   opacity: 0.7;
   margin-bottom: 2rem;
@@ -103,4 +109,30 @@ h2 {
 h3,
 p {
   color: #fff;
+}
+
+Form {
+  color: #fff;
+}
+
+.profile_message {
+  color: #fff;
+  background-color: #61625DC4;
+  border-color: black;
+}
+
+.bg-image {
+  top: 0;
+  height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background-position: center;
+  background-image: url('./app/assets/img/sunset.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.home_card {
+  background-color: #1E1E1E;
 }
