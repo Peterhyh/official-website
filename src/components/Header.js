@@ -24,7 +24,7 @@ const Header = () => {
     }, [])
 
     return (
-        <Navbar className={`nav ${showNav && 'navbar_dark'}`} dark sticky='top' expand='md'>
+        <Navbar className={`nav ${showNav && 'navbar_dark'}`} dark expand='md' sticky='top'>
             <NavbarBrand href='/'>
                 <img src={Logo} alt="Peter's signiture in white" />
             </NavbarBrand>

@@ -1,6 +1,5 @@
-import { Container, Row, Col, Card } from 'reactstrap';
-import { ProfileMessage } from '../features/aboutMe/ProfileContent';
 import ProfileContent from '../features/aboutMe/ProfileContent';
+import { Jumbotron } from 'reactstrap';
 
 const HomePage = () => {
     return (
