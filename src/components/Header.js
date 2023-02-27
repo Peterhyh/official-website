@@ -36,7 +36,11 @@ const Header = () => {
                             <i className='fa fa-home fa-lg' /> Home
                         </NavLink>
                     </NavItem>
-
+                    <NavItem>
+                        <NavLink className='nav-link' to='/project' >
+                            <i className="fa fa-duotone fa-file" /> Projects
+                        </NavLink>
+                    </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/photo' >
                             <i className='fa fa-duotone fa-image fa-lg' /> Photography
