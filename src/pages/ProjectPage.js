@@ -1,12 +1,10 @@
-import { Container, Row, Col } from 'reactstrap';
+import Projects from '../components/Projects';
+import { Container } from 'reactstrap';
 
 const ProjectPage = () => {
     return (
         <Container>
-            <Row>
-                <Col>
-                </Col>
-            </Row>
+            <Projects />
         </Container>
     )
 };
