@@ -138,3 +138,7 @@ Form {
 .home_card {
   background-color: #1E1E1E;
 }
+
+.login-modal {
+  color: black;
+}

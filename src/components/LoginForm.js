@@ -5,6 +5,14 @@ import { useState } from 'react';
 const LoginForm = () => {
     const [openModal, setOpenModal] = useState(false);
 
+    const handleLogin = (values) => {
+        const currentUser = {
+            username: values.username,
+            password: values.username
+        }
+        setOpenModal(false);
+    };
+
     return (
         <>
             <Button
@@ -23,10 +31,11 @@ const LoginForm = () => {
                             username: '',
                             password: ''
                         }}
+                        onSubmit={handleLogin}
                     >
                         <Form>
                             <FormGroup>
-                                <Label htmlFor='username'>
+                                <Label className='login-modal' htmlFor='username'>
                                     Username
                                 </Label>
                                 <Field
@@ -37,7 +46,7 @@ const LoginForm = () => {
                                 />
                             </FormGroup>
                             <FormGroup>
-                                <Label htmlFor='password'>
+                                <Label className='login-modal' htmlFor='password'>
                                     Password
                                 </Label>
                                 <Field
