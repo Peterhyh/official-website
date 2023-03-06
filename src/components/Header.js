@@ -2,6 +2,7 @@ import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reac
 import { NavLink } from 'react-router-dom';
 import Logo from '../app/assets/img/wsigniture.png';
 import { useEffect, useState } from 'react';
+import LoginForm from '../components/LoginForm';
 
 
 const Header = () => {
@@ -52,6 +53,7 @@ const Header = () => {
                             <i className='fa fa-address-card fa-lg' /> Contact
                         </NavLink>
                     </NavItem>
+                    <LoginForm />
                 </Nav>
             </Collapse>
         </Navbar>
