@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -123,22 +129,30 @@ Form {
   border-color: black;
 }
 
-.bg-image {
-  top: 0;
-  height: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-  background-position: center;
-  background-image: url('./app/assets/img/sunset.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: 'sticky';
-}
-
 .home_card {
   background-color: #1E1E1E;
 }
 
 .login-modal {
   color: black;
+}
+
+/*HomeBanner*/
+
+.content {
+  height: 100vh;
+  width: 100%;
+}
+
+.text-content {
+  font-family: 'Luxurious Script', cursive;
+  ;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  padding: 15px 50px;
+  color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  font-size: 100px;
 }

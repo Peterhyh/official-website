@@ -1,12 +1,20 @@
 import { Formik, Form, Field } from 'formik';
-import { Button, Label, Col, FormGroup, Card, Alert } from 'reactstrap';
+import { Button, Label, Col, FormGroup, Card } from 'reactstrap';
 
 
 const ContactForm = () => {
+
     const handleSubmit = (values, { resetForm }) => {
-        console.log('Your values:', values);
-        console.log('in JSON format:', JSON.stringify(values));
-        resetForm();
+        fetch('http://localhost:3000/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(values, null, 2)
+        })
+            .then(response => {
+                response.json();
+            })
+            .catch(err => new Error(err));
+        resetForm()
     };
 
     return (
@@ -29,7 +37,7 @@ const ContactForm = () => {
                         <Col md='7'>
                             <Field
                                 name='email'
-                                type='textarea'
+                                type='email'
                                 className='form-control'
                                 placeholder='Your email address'
                             />
@@ -42,7 +50,7 @@ const ContactForm = () => {
                         <Col md='8'>
                             <Field
                                 name='subject'
-                                type='textarea'
+                                type='text'
                                 className='form-control'
                                 placeholder='Subject'
                             />{' '}
@@ -74,7 +82,7 @@ const ContactForm = () => {
                     </FormGroup>
                 </Form>
             </Formik>
-        </Card>
+        </Card >
 
 
     )

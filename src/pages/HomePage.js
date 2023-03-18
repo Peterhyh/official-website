@@ -1,12 +1,13 @@
+import HomeBanner from '../components/home/HomeBanner';
 import ProfileContent from '../features/aboutMe/ProfileContent';
-import { Jumbotron } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 
 const HomePage = () => {
     return (
-        <>
-            <div className='bg-image'></div>
+        <div>
+            <HomeBanner />
             <ProfileContent />
-        </>
+        </div>
     )
 };
 
