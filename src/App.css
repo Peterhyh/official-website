@@ -145,14 +145,12 @@ Form {
 }
 
 .text-content {
-  font-family: 'Luxurious Script', cursive;
-  ;
   position: absolute;
-  top: 10%;
-  left: 50%;
-  padding: 15px 50px;
-  color: white;
-  transform: translate(-50%, -50%);
-  border-radius: 20px;
-  font-size: 100px;
+  bottom: 1%;
+  left: 1%;
+}
+
+.peter-signiture {
+  height: 7%;
+  width: 20%;
 }
