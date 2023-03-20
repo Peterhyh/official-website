@@ -3,7 +3,7 @@ import './App.css';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Router } from 'react-router-dom';
 import PhotoPage from './pages/PhotoPage';
 import PhotoDetailPage from './pages/PhotoDetailPage';
 import ProjectPage from './pages/ProjectPage';

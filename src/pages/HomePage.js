@@ -1,6 +1,5 @@
 import HomeBanner from '../components/home/HomeBanner';
-import ProfileContent from '../features/aboutMe/ProfileContent';
-import { Container, Row, Col } from 'reactstrap';
+import ProfileContent from '../components/home/ProfileContent';
 
 const HomePage = () => {
     return (
