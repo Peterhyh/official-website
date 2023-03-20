@@ -138,8 +138,8 @@ Form {
   color: black;
 }
 
+/*HomePage------------------------------------------------------------------------------*/
 /*HomeBanner*/
-
 .content {
   height: 100vh;
   width: 100%;
@@ -157,20 +157,16 @@ Form {
   width: 20%;
 }
 
-.banner-title {
-  position: absolute;
-  top: 40%;
-  left: 35%;
-  font-family: 'Montserrat', sans-serif;
-}
+
 
 .banner-name {
   font-size: 40px;
-  margin: 0;
+  text-align: center;
 }
 
 .banner-description {
   font-size: 20px;
+  text-align: center;
 }
 
 /*ProfileContent*/
@@ -186,4 +182,17 @@ Form {
   width: 100%;
   display: block;
   margin-block-start: 1em;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

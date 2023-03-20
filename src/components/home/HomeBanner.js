@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import Signiture from '../../app/assets/img/bsigniture.png';
 
 
+
 const HomeBanner = () => {
     const [toggle, setToggle] = useState(false);
 
@@ -20,12 +21,13 @@ const HomeBanner = () => {
     }, []);
 
     return (
+
         <animated.div style={fade}>
-            <Parallax strength={200} blur={{ min: -15, max: 15 }} bgImage={banner}>
-                <div className='content'>
+            <Parallax md='7' strength={200} blur={{ min: -15, max: 15 }} bgImage={banner}>
+                <div className='content d-flex justify-content-center align-items-center'>
                     <div className='banner-title'>
-                        <p className='banner-name d-flex justify-content-center row'>PETER HUYNH</p>
-                        <p className='banner-description d-flex justify-content-center'>SOFTWARE DEVELOPER | PHOTOGRAPHER </p>
+                        <p className='banner-name'>PETER HUYNH</p>
+                        <p className='banner-description'>SOFTWARE DEVELOPER | PHOTOGRAPHER </p>
                     </div>
                     <div className='text-content'>
                         <img className='peter-signiture' src={Signiture} alt='Peter Huynh Signiture' />
@@ -33,6 +35,7 @@ const HomeBanner = () => {
                 </div>
             </Parallax>
         </animated.div>
+
     )
 };
 

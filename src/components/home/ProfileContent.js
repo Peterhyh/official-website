@@ -1,35 +1,12 @@
 import me from '../../app/assets/img/me.jpg';
 import { Container, Col, Row } from 'reactstrap';
-import { useSpring, animated, useTransition } from 'react-spring';
-import { useEffect, useState } from 'react';
 
 const ProfileContent = () => {
-
-    const [showContent, setShowContent] = useState(false);
-
-    const slide = useTransition(showContent, {
-        from: { x: -100, y: 800, opacity: 0 },
-        enter: { x: 0, y: 0, opacity: 1 },
-        leave: { x: 100, y: -800, opacity: 0 }
-    });
-
-    useEffect(() => {
-        setShowContent(true);
-    }, [])
-
     return (
         <Container className='mt-3 row-content'>
             <Row >
-                <Col className='d-flex justify-content-center'>
-                    {slide((style, item) =>
-                        item ?
-                            <animated.div style={style}>
-                                <img className='profile-pic' src={me} alt='A photograph of Peter Huynh' />
-                            </animated.div>
-                            :
-                            ''
-                    )}
-
+                <Col className='d-flex justify-content-center' >
+                    <img className='profile-pic' src={me} alt='A photograph of Peter Huynh' />
                 </Col>
             </Row>
             <Row>
