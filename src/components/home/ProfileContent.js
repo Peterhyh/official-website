@@ -1,51 +1,40 @@
 import me from '../../app/assets/img/me.jpg';
 import { Container, Col, Row } from 'reactstrap';
-import { useEffect, useRef, useState, useMemo } from 'react';
+import { useInView } from 'react-intersection-observer';
+
 
 const ProfileContent = () => {
-    const [showContent, setShowContent] = useState(false);
 
-    const targetRef = useRef(null);
+    const { ref: picRef, inView: showPic } = useInView();
+    const { ref: rocketRef, inView: showRocket } = useInView();
+    const { ref: introRef, inView: showIntro } = useInView();
 
-    const cb = entries => {
-        const [entry] = entries;
-        setShowContent(entry.isIntersecting);
-    };
-
-    const options = useMemo(() => {
-        return {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.3
-        }
-    }, []);
-
-    useEffect(() => {
-        const observer = new IntersectionObserver(cb, options);
-        const currentTarget = targetRef.current;
-        if (currentTarget) {
-            observer.observe(currentTarget);
-        }
-
-        return () => {
-            if (currentTarget) {
-                observer.unobserve(currentTarget);
-            }
-        }
-    }, [targetRef, options]);
 
     return (
-        <Container className='profile-container mt-3 row-content' useRef={targetRef}>
+        <Container className='mt-3 row-content' >
             <Row >
                 <Col className='d-flex justify-content-center' >
-                    <img className='profile-pic' src={me} alt='A photograph of Peter Huynh' />
+                    <div ref={picRef}>
+                        <img className={`${'profile-pic'} ${showPic ? 'show-pic' : 'profile-pic'}`} src={me} alt='A photograph of Peter Huynh' />
+                    </div>
                 </Col>
             </Row>
             <Row>
                 <Col className='mt-2'>
-                    <p className='profile-intro d-flex justify-content-center'>
-                        Hi there! My name is Peter Huynh and I graduated Nucamps
-                        full-stack and backend engineering programs in March 2023.
+                    <p ref={introRef} >
+                        <span className={`${'intro'} ${showIntro ? 'animateIntro' : 'intro'}`}>
+                            Hi there! My name is Peter Huynh and I graduated Nucamps
+                            full-stack and backend engineering programs in March 2023.
+                        </span>
+                    </p>
+                </Col>
+            </Row>
+            <Row >
+                <Col className='d-flex justify-content-center'>
+                    <p ref={rocketRef}>
+                        <span className={`${'rocket'} ${showRocket ? 'animateRocket' : 'rocket'}`}>
+                            🚀
+                        </span>
                     </p>
                 </Col>
             </Row>

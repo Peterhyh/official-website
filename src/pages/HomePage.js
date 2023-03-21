@@ -1,6 +1,7 @@
 import HomeBanner from '../components/home/HomeBanner';
 import ProfileContent from '../components/home/ProfileContent';
 
+
 const HomePage = () => {
     return (
         <div>
