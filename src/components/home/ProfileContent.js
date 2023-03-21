@@ -1,9 +1,41 @@
 import me from '../../app/assets/img/me.jpg';
 import { Container, Col, Row } from 'reactstrap';
+import { useEffect, useRef, useState, useMemo } from 'react';
 
 const ProfileContent = () => {
+    const [showContent, setShowContent] = useState(false);
+
+    const targetRef = useRef(null);
+
+    const cb = entries => {
+        const [entry] = entries;
+        setShowContent(entry.isIntersecting);
+    };
+
+    const options = useMemo(() => {
+        return {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.3
+        }
+    }, []);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(cb, options);
+        const currentTarget = targetRef.current;
+        if (currentTarget) {
+            observer.observe(currentTarget);
+        }
+
+        return () => {
+            if (currentTarget) {
+                observer.unobserve(currentTarget);
+            }
+        }
+    }, [targetRef, options]);
+
     return (
-        <Container className='mt-3 row-content'>
+        <Container className='profile-container mt-3 row-content' useRef={targetRef}>
             <Row >
                 <Col className='d-flex justify-content-center' >
                     <img className='profile-pic' src={me} alt='A photograph of Peter Huynh' />
