@@ -48,19 +48,7 @@ h2 {
   min-height: 200px;
 }
 
-.site-footer {
-  background-color: #1E1E1E80;
-  padding: 20px 0;
-  margin-top: 2rem;
-}
 
-.left-footer {
-  color: #fff;
-}
-
-.middle-footer {
-  color: rgb(73, 73, 73);
-}
 
 .navbar-brand {
   max-width: 7rem;
@@ -80,16 +68,16 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
-  background-color: 'transparent';
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.navbar_dark {
+/* .navbar_dark {
   background-image: linear-gradient(to right, #565859, #1E1E1E);
   opacity: 0.7;
   margin-bottom: 2rem;
   min-height: 8rem;
   position: 'sticky';
-}
+} */
 
 .page-enter {
   opacity: 0;
@@ -157,6 +145,10 @@ Form {
   width: 20%;
 }
 
+.banner-title {
+  transform: translateY(-50px);
+}
+
 .banner-name {
   font-size: 40px;
   text-align: center;
@@ -167,7 +159,12 @@ Form {
   text-align: center;
 }
 
-/*ProfileContent*/
+/*ProfileContent------------------------------------------------------------------------------*/
+.profile-container {
+  height: 100vh;
+  background-size: cover;
+}
+
 .profile-pic {
   border-radius: 100%;
 }
@@ -266,4 +263,16 @@ Form {
   100% {
     transform: skew(0deg) translateX(0px);
   }
+}
+
+
+/*Footer------------------------------------------------------------------------------*/
+
+.site-footer {
+  background-color: #0F0F0F;
+  padding: 2rem;
+}
+
+.footer-social {
+  color: #fff;
 }

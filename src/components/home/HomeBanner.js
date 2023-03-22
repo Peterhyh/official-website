@@ -4,6 +4,7 @@ import banner from '../../app/assets/img/sunset.jpg';
 import { useSpring, animated } from 'react-spring';
 import { useEffect, useState } from 'react';
 import Signiture from '../../app/assets/img/bsigniture.png';
+import Header from "../Header";
 
 
 
@@ -24,6 +25,9 @@ const HomeBanner = () => {
 
         <animated.div style={fade}>
             <Parallax md='7' strength={200} blur={{ min: -15, max: 15 }} bgImage={banner}>
+                <div>
+                    <Header />
+                </div>
                 <div className='content d-flex justify-content-center align-items-center'>
                     <div className='banner-title'>
                         <p className='banner-name'>PETER HUYNH</p>

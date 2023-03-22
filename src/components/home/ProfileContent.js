@@ -11,16 +11,16 @@ const ProfileContent = () => {
 
 
     return (
-        <Container className='mt-3 row-content' >
+        <Container className='profile-container row-content' >
             <Row >
-                <Col className='d-flex justify-content-center' >
+                <Col className='mt-5 d-flex justify-content-center' >
                     <div ref={picRef}>
                         <img className={`${'profile-pic'} ${showPic ? 'show-pic' : 'profile-pic'}`} src={me} alt='A photograph of Peter Huynh' />
                     </div>
                 </Col>
             </Row>
             <Row>
-                <Col className='mt-2'>
+                <Col className='mt-5'>
                     <p ref={introRef} >
                         <span className={`${'intro'} ${showIntro ? 'animateIntro' : 'intro'}`}>
                             Hi there! My name is Peter Huynh and I graduated Nucamps
@@ -30,7 +30,7 @@ const ProfileContent = () => {
                 </Col>
             </Row>
             <Row >
-                <Col className='d-flex justify-content-center'>
+                <Col className='mt-5 d-flex justify-content-center'>
                     <p ref={rocketRef}>
                         <span className={`${'rocket'} ${showRocket ? 'animateRocket' : 'rocket'}`}>
                             🚀

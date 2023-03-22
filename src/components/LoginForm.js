@@ -15,12 +15,6 @@ const LoginForm = () => {
 
     return (
         <>
-            <Button
-                outline
-                onClick={() => setOpenModal(!openModal)}
-            >
-                Login
-            </Button>
             <Modal isOpen={openModal}>
                 <ModalHeader toggle={() => setOpenModal(!openModal)}>
                     Login

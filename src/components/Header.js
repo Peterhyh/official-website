@@ -25,32 +25,29 @@ const Header = () => {
     }, [])
 
     return (
-        <Navbar className={`nav ${showNav && 'navbar_dark'}`} dark expand='md' sticky='top'>
-            <NavbarBrand href='/'>
-                <img src={Logo} alt="Peter's signiture in white" />
-            </NavbarBrand>
+        <Navbar className='nav' dark expand='md' sticky='top'>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar>
                     <NavItem>
                         <NavLink className='nav-link' to='/' >
-                            <i className='fa fa-home fa-lg' /> Home
+                            [ Home ]
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/project' >
-                            <i className="fa fa-duotone fa-file" /> Projects
+                            [ Projects ]
                         </NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink className='nav-link' to='/photo' >
-                            <i className='fa fa-duotone fa-image fa-lg' /> Photography
+                            [ Photography ]
                         </NavLink>
                     </NavItem>
 
                     <NavItem>
                         <NavLink className='nav-link' to='/contact' >
-                            <i className='fa fa-address-card fa-lg' /> Contact
+                            [ Contact ]
                         </NavLink>
                     </NavItem>
                     <LoginForm />
