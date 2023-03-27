@@ -276,3 +276,18 @@ Form {
 .footer-social {
   color: #fff;
 }
+
+/* Certificates------------------------------------------------------------------------------*/
+.certificates-section {
+  color: #fff;
+}
+
+.honor-certificate {
+  height: 20rem;
+  width: 17rem;
+}
+
+.fs-certificate {
+  height: 20rem;
+  width: 17rem;
+}

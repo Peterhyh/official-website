@@ -45,12 +45,12 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
 
-                    <NavItem>
+                    {/* <NavItem>
                         <NavLink className='nav-link' to='/contact' >
                             [ Contact ]
                         </NavLink>
-                    </NavItem>
-                    <LoginForm />
+                    </NavItem> */}
+                    {/* <LoginForm /> */}
                 </Nav>
             </Collapse>
         </Navbar>

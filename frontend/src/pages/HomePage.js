@@ -1,3 +1,4 @@
+import Certificates from '../components/home/Certificates';
 import HomeBanner from '../components/home/HomeBanner';
 import ProfileContent from '../components/home/ProfileContent';
 
@@ -7,6 +8,7 @@ const HomePage = () => {
         <div>
             <HomeBanner />
             <ProfileContent />
+            <Certificates />
         </div>
     )
 };
