@@ -291,3 +291,7 @@ Form {
   height: 20rem;
   width: 17rem;
 }
+
+.h-cert {
+  display: inline-block;
+}

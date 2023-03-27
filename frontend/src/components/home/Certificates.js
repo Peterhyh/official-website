@@ -18,6 +18,8 @@ const Certificates = () => {
                     <h1>Certificates</h1>
                 </Col>
             </Row>
+
+
             <Row className='d-flex justify-content-center'>
                 <Col className='d-flex justify-content-center mt-3' md='4'>
                     <img className='honor-certificate' src={FS} alt='Full Stack Honor Certificate' />
@@ -35,6 +37,7 @@ const Certificates = () => {
                 </Col>
             </Row>
 
+
             <Row className='d-flex justify-content-center'>
                 <Col className='d-flex justify-content-center mt-3' md='3'>
                     <img className='fs-certificate' src={webDev} alt='Web Development Fundamentals Certificate' />
@@ -51,16 +54,16 @@ const Certificates = () => {
             </Row>
             <Row className='d-flex justify-content-center'>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>Web Development Fundamentals</p>
+                    <p>Web Development</p>
                 </Col>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>Data Structure and Algorithms with Python</p>
+                    <p>Python</p>
                 </Col>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>SQL and Data Modeling with Python</p>
+                    <p>SQL</p>
                 </Col>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>Modern Software Engineering with DevOps</p>
+                    <p>DevOps</p>
                 </Col>
             </Row>
 
@@ -81,16 +84,16 @@ const Certificates = () => {
             </Row>
             <Row className='d-flex justify-content-center'>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>Front-End Web Development: Bootstrap</p>
+                    <p>Bootstrap</p>
                 </Col>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>Front-End Web Development: React</p>
+                    <p>React</p>
                 </Col>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>Front End Web and Mobile Development Bootcamp</p>
+                    <p>React Native</p>
                 </Col>
                 <Col className='d-flex justify-content-center p-3' md='3'>
-                    <p>Back-End Development: NodeJS, Express, MongoDB</p>
+                    <p>NodeJS, Express, MongoDB</p>
                 </Col>
             </Row>
         </Container>
