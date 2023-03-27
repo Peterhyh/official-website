@@ -49,8 +49,6 @@ const Certificates = () => {
                     <img className='fs-certificate' src={devOps} alt='Modern Software Engineering with DevOps Certificate' />
                 </Col>
             </Row>
-
-
             <Row className='d-flex justify-content-center'>
                 <Col className='d-flex justify-content-center p-3' md='3'>
                     <p>Web Development Fundamentals</p>
@@ -65,18 +63,34 @@ const Certificates = () => {
                     <p>Modern Software Engineering with DevOps</p>
                 </Col>
             </Row>
+
+
             <Row className='d-flex justify-content-center'>
                 <Col className='d-flex justify-content-center mt-3' md='3'>
-                    <img className='fs-certificate' src={BS} alt='Web Development Fundamentals Certificate' />
+                    <img className='fs-certificate' src={BS} alt='Front-End Web Development: Bootstrap' />
                 </Col>
                 <Col className='d-flex justify-content-center mt-3' md='3'>
-                    <img className='fs-certificate' src={react} alt='Data Structure and Algorithms with Python Certificate' />
+                    <img className='fs-certificate' src={react} alt='Front-End Web Development: React' />
                 </Col>
                 <Col className='d-flex justify-content-center mt-3' md='3'>
-                    <img className='fs-certificate' src={RN} alt='SQL and Data Modeling with Python Certificate' />
+                    <img className='fs-certificate' src={RN} alt='Front End Web and Mobile Development Bootcamp' />
                 </Col>
                 <Col className='d-flex justify-content-center mt-3' md='3'>
-                    <img className='fs-certificate' src={mongo} alt='Modern Software Engineering with DevOps Certificate' />
+                    <img className='fs-certificate' src={mongo} alt='Back-End Development: NodeJS, Express, MongoDB' />
+                </Col>
+            </Row>
+            <Row className='d-flex justify-content-center'>
+                <Col className='d-flex justify-content-center p-3' md='3'>
+                    <p>Front-End Web Development: Bootstrap</p>
+                </Col>
+                <Col className='d-flex justify-content-center p-3' md='3'>
+                    <p>Front-End Web Development: React</p>
+                </Col>
+                <Col className='d-flex justify-content-center p-3' md='3'>
+                    <p>Front End Web and Mobile Development Bootcamp</p>
+                </Col>
+                <Col className='d-flex justify-content-center p-3' md='3'>
+                    <p>Back-End Development: NodeJS, Express, MongoDB</p>
                 </Col>
             </Row>
         </Container>
