@@ -1,7 +1,6 @@
 import sunset from '../assets/img/sunset.jpg';
 import pic2 from '../assets/img/pic2.jpg';
 import pic3 from '../assets/img/pic3.jpg';
-import bnw from '../assets/img/bnw370z.png';
 import pic4 from '../assets/img/pic4.png';
 
 
@@ -41,14 +40,5 @@ export const PHOTOGRAPHS = [
         featured: false,
         description: "Clean and stylish.",
         credit: 'Photographed by Peter Huynh'
-    },
-    {
-        id: 4,
-        name: 'Stealth',
-        image: bnw,
-        featured: false,
-        description: "Beauty doesn't always have to be colorful.",
-        credit:
-            'Photographed by Peter Huynh'
     },
 ];

@@ -1,6 +1,5 @@
 import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
-import Logo from '../app/assets/img/wsigniture.png';
 import { useEffect, useState } from 'react';
 import LoginForm from '../components/LoginForm';
 

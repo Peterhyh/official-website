@@ -6,39 +6,27 @@ import { useInView } from 'react-intersection-observer';
 const ProfileContent = () => {
 
     const { ref: picRef, inView: showPic } = useInView();
-    const { ref: rocketRef, inView: showRocket } = useInView();
     const { ref: introRef, inView: showIntro } = useInView();
 
 
     return (
-        <Container className='profile-container row-content ' >
-            <Row className='d-flex align-items-center'>
-                <Row >
-                    <Col className='mt-5 d-flex justify-content-center' >
-                        <div ref={picRef}>
-                            <img className={`${'profile-pic'} ${showPic ? 'show-pic' : 'profile-pic'}`} src={me} alt='A photograph of Peter Huynh' />
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col className='mt-5'>
-                        <p ref={introRef} >
-                            <span className={`${'intro'} ${showIntro ? 'animateIntro' : 'intro'}`}>
-                                Hi there! My name is Peter Huynh and I graduated Nucamps
-                                full-stack and backend engineering programs in March 2023.
-                            </span>
-                        </p>
-                    </Col>
-                </Row>
-                <Row >
-                    <Col className='mt-5 d-flex justify-content-center'>
-                        <p ref={rocketRef}>
-                            <span className={`${'rocket'} ${showRocket ? 'animateRocket' : 'rocket'}`}>
-                                🚀
-                            </span>
-                        </p>
-                    </Col>
-                </Row>
+        <Container className='row-content mb-5 mt-5' >
+            <Row className='d-flex justify-content-center align-items-center'>
+                <Col className=' d-flex justify-content-center align-items-center' >
+                    <div ref={picRef}>
+                        <img className={`${'profile-pic'} ${showPic ? 'show-pic' : 'profile-pic'}`} src={me} alt='A photograph of Peter Huynh' />
+                    </div>
+                </Col>
+            </Row>
+            <Row className='d-flex justify-content-center align-items-center'>
+                <Col className='d-flex justify-content-center align-items-center mt-5' xs='10' >
+                    <div ref={introRef} >
+                        <span className={`${'intro'} ${showIntro ? 'animateIntro' : 'intro'}`}>
+                            Hi there! My name is Peter Huynh and I graduated Nucamps
+                            full-stack and backend engineering programs in March 2023.
+                        </span>
+                    </div>
+                </Col>
             </Row>
         </Container >
     )

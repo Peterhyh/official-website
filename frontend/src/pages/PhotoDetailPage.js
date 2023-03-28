@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { selectPhotoById } from '../features/photograph/photographsSlice';
+import { selectPhotoById } from '../components/photograph/photographsSlice';
 import { Container, Row } from 'reactstrap';
-import PhotographDetails from '../features/photograph/PhotographDetails';
+import PhotographDetails from '../components/photograph/PhotographDetails';
 import SubHeader from '../components/SubHeader';
 import Header from '../components/Header';
 

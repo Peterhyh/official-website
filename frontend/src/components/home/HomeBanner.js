@@ -24,7 +24,7 @@ const HomeBanner = () => {
     return (
 
         <animated.div style={fade}>
-            <Parallax md='7' strength={100} blur={{ min: -15, max: 15 }} bgImage={banner}>
+            <Parallax md='7' strength={100} bgImage={banner}>
                 <div>
                     <Header />
                 </div>

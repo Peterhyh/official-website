@@ -1,5 +1,5 @@
 import { Container } from 'reactstrap';
-import PhotographsList from '../features/photograph/PhotographsList';
+import PhotographsList from '../components/photograph/PhotographsList';
 import SubHeader from '../components/SubHeader';
 import Header from '../components/Header';
 

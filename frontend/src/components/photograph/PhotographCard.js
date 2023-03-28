@@ -1,4 +1,4 @@
-import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
+import { Card, CardImg } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 const PhotographCard = ({ photograph }) => {
@@ -7,11 +7,6 @@ const PhotographCard = ({ photograph }) => {
         <Link to={`${id}`}>
             <Card>
                 <CardImg width='100%' src={image} alt={name} />
-                <CardImgOverlay>
-                    <CardTitle className='image-title'>
-                        {name}
-                    </CardTitle>
-                </CardImgOverlay>
             </Card>
         </Link>
     );

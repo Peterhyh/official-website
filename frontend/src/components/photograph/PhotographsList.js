@@ -6,7 +6,7 @@ const PhotographsList = () => {
     const photographs = selectAllPhotographs();
 
     return (
-        <Card className='p-4 rounded-6 border-5' style={{ backgroundColor: '#1E1E1EC4' }}>
+        <Card className='p-4 rounded-6 border-5 m-5' style={{ backgroundColor: '#1E1E1EC4' }}>
             <Row style={{ justifyContent: 'center' }}>
                 {photographs.map((photograph) => {
                     return (
