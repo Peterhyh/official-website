@@ -8,7 +8,7 @@ const HomePage = () => {
         <div>
             <HomeBanner />
             <ProfileContent />
-            <Certificates />
+            {/* <Certificates /> */}
         </div>
     )
 };
