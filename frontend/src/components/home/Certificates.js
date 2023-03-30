@@ -32,12 +32,12 @@ const Certificates = () => {
             <Row className='d-flex justify-content-center'>
                 <Col className='d-flex justify-content-center m-3' md='4'>
                     <span ref={leftRef}>
-                        <img className={`${'honor-certificate'} ${showLeft ? 'animate-left' : 'honor-certificate'}`} src={FS} alt='Full Stack Honor Certificate' />
+                        <img className={`${'honor-certificate'} ${showLeft ? 'animate-left' : ''}`} src={FS} alt='Full Stack Honor Certificate' />
                     </span>
                 </Col>
                 <Col className='d-flex justify-content-center m-3' md='4'>
-                    <span>
-                        <img className='honor-certificate' src={BE} alt='Backend Honor Certificate' />
+                    <span ref={rightRef}>
+                        <img className={`${'honor-certificate'} ${showRight ? 'animate-right' : ''}`} src={BE} alt='Backend Honor Certificate' />
                     </span>
                 </Col>
             </Row>

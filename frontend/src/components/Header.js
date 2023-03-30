@@ -24,7 +24,7 @@ const Header = () => {
     }, [])
 
     return (
-        <Navbar className='nav' dark expand='md' sticky='top'>
+        <Navbar className='nav' dark expand='md'>
             <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar>
                 <Nav className='ms-auto' navbar>
