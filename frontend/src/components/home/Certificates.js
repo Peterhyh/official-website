@@ -19,7 +19,7 @@ const Certificates = () => {
 
     const { ref: leftRef, inView: showLeft } = useInView();
     const { ref: rightRef, inView: showRight } = useInView();
-
+    const { ref: middleRef, inView: showMiddle } = useInView();
     return (
         <Container>
             <Row>
