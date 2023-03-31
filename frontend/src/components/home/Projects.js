@@ -15,7 +15,7 @@ const Projects = () => {
         },
         onSubmit: (values) => {
             console.log('---LOG1: ', values)
-            axios.post('http://localhost:3001/bmi', {
+            axios.post('54.164.33.95:3001/bmi', {
                 weight: values.weight,
                 height: values.height
             })
