@@ -15,9 +15,8 @@ const fs = require('fs')
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3001');
+var port = normalizePort(process.env.PORT || '443');
 app.set('port', port);
-app.set('secPort', 443);
 
 /**
  * Create HTTP server.
@@ -46,8 +45,8 @@ const secureServer = https.createServer(options, app);
  * Listen on provided port, on all network interfaces.
  */
 
-secureServer.listen(app.get('secPort'), () => {
-  console.log('server listening on port', app.get('secPort'));
+secureServer.listen(port, () => {
+  console.log('server listening on port', port);
 });
 secureServer.on('error', onError);
 secureServer.on('listening', onListening);
