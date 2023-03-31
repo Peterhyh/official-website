@@ -23,7 +23,7 @@ const Certificates = () => {
     return (
         <Container>
             <Row>
-                <Col className='certificates-section d-flex justify-content-center mt-3'>
+                <Col className='certificates-section d-flex justify-content-center p-5'>
                     <h1>Certificates</h1>
                 </Col>
             </Row>

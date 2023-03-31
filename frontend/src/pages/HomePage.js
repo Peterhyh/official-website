@@ -1,6 +1,7 @@
 import Certificates from '../components/home/Certificates';
 import HomeBanner from '../components/home/HomeBanner';
 import ProfileContent from '../components/home/ProfileContent';
+import Projects from '../components/home/Projects';
 
 
 const HomePage = () => {
@@ -8,6 +9,7 @@ const HomePage = () => {
         <div>
             <HomeBanner />
             <ProfileContent />
+            <Projects />
             <Certificates />
         </div>
     )

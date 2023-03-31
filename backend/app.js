@@ -7,9 +7,10 @@ const config = require('./config.js');
 
 
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-const contactRouter = require('./routes/contactRouter');
+const indexRouter = require('./routers/index');
+const usersRouter = require('./routers/users');
+const contactRouter = require('./routers/contactRouter');
+const bmiRouter = require('./routers/bmiRouter');
 
 
 
@@ -46,6 +47,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/contact', contactRouter);
+app.use('/bmi', bmiRouter);
 
 
 

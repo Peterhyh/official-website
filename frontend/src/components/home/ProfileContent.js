@@ -10,7 +10,7 @@ const ProfileContent = () => {
 
 
     return (
-        <Container className='row-content mb-5 mt-5' >
+        <Container className='row-content' >
             <Row className='d-flex justify-content-center align-items-center'>
                 <Col className=' d-flex justify-content-center align-items-center' >
                     <div ref={picRef}>
