@@ -1,6 +1,5 @@
 import { Button, Label, FormGroup, Container, Col, Row } from 'reactstrap';
 import { Formik, Form, Field, useFormik } from 'formik';
-import axios from 'axios';
 import { useState } from 'react';
 
 
@@ -18,18 +17,6 @@ const BmiCal = () => {
             setBmi(`BMI: ${calculate} kg/m2`)
         }
     });
-    // console.log('---LOG1: ', values)
-    // axios.post('https://localhost:3443/bmi', {
-    //     weight: values.weight,
-    //     height: values.height
-    // })
-    //     .then(response => {
-    //         console.log('---LOG2: ', response)
-    //         setBmi(JSON.stringify(response.data))
-    //     })
-    //     .catch(err => {
-    //         console.err(err)
-    //     });
 
     return (
         <Container>

@@ -1,7 +1,6 @@
-import { Navbar, NavbarBrand, Collapse, NavbarToggler, Nav, NavItem } from 'reactstrap';
+import { Navbar, Collapse, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import LoginForm from '../components/LoginForm';
 
 
 const Header = () => {
@@ -38,13 +37,6 @@ const Header = () => {
                             [ Photography ]
                         </NavLink>
                     </NavItem>
-
-                    {/* <NavItem>
-                        <NavLink className='nav-link' to='/contact' >
-                            [ Contact ]
-                        </NavLink>
-                    </NavItem> */}
-                    {/* <LoginForm /> */}
                 </Nav>
             </Collapse>
         </Navbar>
