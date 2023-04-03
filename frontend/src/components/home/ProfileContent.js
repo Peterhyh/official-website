@@ -22,8 +22,8 @@ const ProfileContent = () => {
                 <Col className='d-flex justify-content-center align-items-center mt-5' xs='10' >
                     <div ref={introRef} >
                         <span className={`${'intro'} ${showIntro ? 'animateIntro' : ''}`}>
-                            Hi there! My name is Peter Huynh and I graduated a coding bootcamp called, Nucamp.
-                            The purpose of this website is to display most of my coding skills, projects, and accomplishments.
+                            Hi there! My name is Peter Huynh and I graduated from a coding bootcamp called Nucamp.
+                            The purpose of this website is to display my coding projects and accomplishments.
                             Feel free to look around and thank you for visiting my website!
                         </span>
                     </div>

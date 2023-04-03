@@ -33,12 +33,7 @@ const BmiCal = () => {
 
     return (
         <Container>
-            <Row className='mini-projects mb-5'>
-                <Col className='d-flex justify-content-center'>
-                    <h1>Projects</h1>
-                </Col>
-            </Row>
-            <Row className='mini-projects mb-5'>
+            <Row className='mini-projects'>
                 <Col>
                     <h2>BMI Calculator:</h2>
                 </Col>
