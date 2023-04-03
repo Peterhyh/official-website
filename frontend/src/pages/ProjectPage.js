@@ -1,4 +1,4 @@
-import Projects from '../components/project/Projects';
+import Projects from '../components/project/ProjectVideos';
 import { Container } from 'reactstrap';
 import Header from '../components/Header';
 

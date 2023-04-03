@@ -4,33 +4,35 @@ import axios from 'axios';
 import { useState } from 'react';
 
 
-const Projects = () => {
+const BmiCal = () => {
 
     const [bmi, setBmi] = useState("Enter weight and height below");
 
     const formik = useFormik({
         initialValues: {
-            weight: '',
-            height: ''
+            inches: '',
+            pounds: ''
         },
         onSubmit: (values) => {
-            console.log('---LOG1: ', values)
-            axios.post('https://localhost:3443/bmi', {
-                weight: values.weight,
-                height: values.height
-            })
-                .then(response => {
-                    console.log('---LOG2: ', response)
-                    setBmi(JSON.stringify(response.data))
-                })
-                .catch(err => {
-                    console.err(err)
-                });
+            const calculate = Math.round(((values.pounds * 703) / Math.pow(values.inches, 2)) * 100) / 100;
+            setBmi(`BMI: ${calculate} kg/m2`)
         }
     });
+    // console.log('---LOG1: ', values)
+    // axios.post('https://localhost:3443/bmi', {
+    //     weight: values.weight,
+    //     height: values.height
+    // })
+    //     .then(response => {
+    //         console.log('---LOG2: ', response)
+    //         setBmi(JSON.stringify(response.data))
+    //     })
+    //     .catch(err => {
+    //         console.err(err)
+    //     });
 
     return (
-        <Container className='row-content'>
+        <Container>
             <Row className='mini-projects mb-5'>
                 <Col className='d-flex justify-content-center'>
                     <h1>Projects</h1>
@@ -52,7 +54,7 @@ const Projects = () => {
                         <FormGroup>
                             <Row className='d-flex justify-content-center'>
                                 <Col md='3'>
-                                    <Label htmlFor='weight'>
+                                    <Label htmlFor='pounds'>
                                         {'Weight (lbs)'}
                                     </Label>
                                 </Col>
@@ -60,10 +62,10 @@ const Projects = () => {
                                     <Field
                                         type='text'
                                         className='form-control'
-                                        name='weight'
+                                        name='pounds'
                                         placeholder='lbs'
                                         onChange={formik.handleChange}
-                                        value={formik.values.weight}
+                                        value={formik.values.pounds}
                                     />
                                 </Col>
                             </Row>
@@ -71,7 +73,7 @@ const Projects = () => {
                         <FormGroup>
                             <Row className='d-flex justify-content-center'>
                                 <Col md='3'>
-                                    <Label htmlFor='height'>
+                                    <Label htmlFor='inches'>
                                         {'Height (inches)'}
                                     </Label>
                                 </Col>
@@ -79,10 +81,10 @@ const Projects = () => {
                                     <Field
                                         type='text'
                                         className='form-control'
-                                        name='height'
+                                        name='inches'
                                         placeholder='inches'
                                         onChange={formik.handleChange}
-                                        value={formik.values.height}
+                                        value={formik.values.inches}
                                     />
                                 </Col>
                             </Row>
@@ -101,4 +103,4 @@ const Projects = () => {
     )
 }
 
-export default Projects;
+export default BmiCal;
