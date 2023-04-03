@@ -13,7 +13,7 @@ const Projects = () => {
             </Row>
             <Row>
                 <Col>
-                    <BmiCal />
+                    {/* <BmiCal /> */}
                     <ProjectVideos />
                 </Col>
             </Row>
