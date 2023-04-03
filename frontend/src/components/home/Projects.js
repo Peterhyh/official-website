@@ -1,5 +1,4 @@
 import { Container, Col, Row } from 'reactstrap';
-import BmiCal from '../project/BmiCal';
 import ProjectVideos from '../project/ProjectVideos';
 
 
@@ -13,7 +12,6 @@ const Projects = () => {
             </Row>
             <Row>
                 <Col>
-                    {/* <BmiCal /> */}
                     <ProjectVideos />
                 </Col>
             </Row>
