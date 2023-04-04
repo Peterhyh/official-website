@@ -11,7 +11,7 @@ const HomePage = () => {
             <HomeBanner />
             <ProfileContent />
             <Certificates />
-            <ContactForm />
+            {/* <ContactForm /> */}
         </div>
     )
 };
