@@ -12,7 +12,7 @@ const ContactForm = () => {
             message: ''
         },
         onSubmit: (values) => {
-            axios.post('http://54.164.33.95:8000/contact', {
+            axios.post('https://localhost:443/contact', {
                 email: values.email,
                 subject: values.subject,
                 message: values.message

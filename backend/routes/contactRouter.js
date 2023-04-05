@@ -1,25 +1,29 @@
 const express = require('express');
 const contactRouter = express.Router();
-// const Contact = require('../models/contact');
+const Contact = require('../models/contact');
 const cors = require('../routes/cors');
 
 contactRouter.route('/')
     .options(cors.corsWithOptions, (req, res) => res.sendStatus(200))
     .get((req, res, next) => {
-        res.statusCode = 200;
-        res.end('Response: GET');
-        console.log('---LOG: Response: GET');
+        Contact.find()
+            .then(contacts => {
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.json(contacts);
+            })
+            .catch(err => next(err));
     })
 
     .post(cors.corsWithOptions, (req, res, next) => {
-        const data = {
-            email: req.body.email,
-            subject: req.body.subject,
-            message: req.body.message,
-            info: "was sent to peterhyh@yahoo.com",
-        };
-        console.log(data);
-        res.send(data);
+        Contact.create(req.body)
+            .then(contact => {
+                console.log(contact);
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.json(contact);
+            })
+            .catch(err => next(err));
     })
 
     .put(cors.corsWithOptions, (req, res) => {
@@ -29,9 +33,14 @@ contactRouter.route('/')
     })
 
     .delete(cors.corsWithOptions, (req, res, next) => {
-        res.statusCode = 200;
-        res.end('Response: DELETE');
-        console.log('---LOG: Response: DELETE');
+        Contact.deleteMany()
+            .then(response => {
+                console.log('---LOG: ', response);
+                res.statusCode = 200;
+                res.setHeader('Content-Type', 'application/json');
+                res.json(response);
+            })
+            .catch(err => next(err));
     })
 
 module.exports = contactRouter;
