@@ -17,8 +17,11 @@ const ContactForm = () => {
                 subject: values.subject,
                 message: values.message
             })
-                .then(response => {
-                    response.json();
+                .then((response) => {
+                    response.json()
+                })
+                .then((data) => {
+                    alert(JSON.stringify(data));
 
                 })
                 .catch(err => new Error(err));
