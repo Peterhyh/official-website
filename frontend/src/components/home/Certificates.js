@@ -19,9 +19,8 @@ const Certificates = () => {
 
     const { ref: leftRef, inView: showLeft } = useInView();
     const { ref: rightRef, inView: showRight } = useInView();
-    const { ref: middleRef, inView: showMiddle } = useInView();
     return (
-        <Container>
+        <Container className='row-content'>
             <Row>
                 <Col className='certificates-section d-flex justify-content-center p-5'>
                     <h1>Certificates</h1>

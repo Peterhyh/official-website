@@ -3,7 +3,7 @@ const express = require('express');
 const path = require('path');
 const logger = require('morgan');
 const passport = require('passport');
-const config = require('./config.js');
+const config = require('../backend/config/config');
 
 const indexRouter = require('./routers/index');
 const usersRouter = require('./routers/users');

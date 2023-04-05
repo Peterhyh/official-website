@@ -1,5 +1,5 @@
 import { Container, Col, Row } from 'reactstrap';
-import ProjectVideos from '../project/ProjectVideos';
+import ProjectVideos from '../ProjectVideos';
 
 
 const Projects = () => {

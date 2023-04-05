@@ -30,7 +30,12 @@ const ContactForm = () => {
 
         <Container>
             <Row>
-                <Col md='7'>
+                <Col className='contact-title p-5 d-flex justify-content-center'>
+                    <h1>Contact</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col className='d-flex justify-content-center mb-5' >
                     <Card className='p-4 rounded-6 border-5' style={{ backgroundColor: '#1E1E1EC4' }}>
                         <Formik>
                             <Form onSubmit={formik.handleSubmit}>
@@ -38,54 +43,54 @@ const ContactForm = () => {
                                     <Label htmlFor='email'>
                                         Email
                                     </Label>
-                                    <Col md='7'>
-                                        <Field
-                                            name='email'
-                                            type='email'
-                                            onChange={formik.handleChange}
-                                            className='form-control'
-                                            placeholder='Your email address'
-                                        />
-                                    </Col>
+
+                                    <Field
+                                        name='email'
+                                        type='email'
+                                        onChange={formik.handleChange}
+                                        className='form-control'
+                                        placeholder='Your email address'
+                                    />
+
                                 </FormGroup>
                                 <FormGroup row>
                                     <Label htmlFor='subject'>
                                         Subject
                                     </Label>
-                                    <Col md='8'>
-                                        <Field
-                                            name='subject'
-                                            type='text'
-                                            onChange={formik.handleChange}
-                                            className='form-control'
-                                            placeholder='Subject'
-                                        />{' '}
-                                    </Col>
+
+                                    <Field
+                                        name='subject'
+                                        type='text'
+                                        onChange={formik.handleChange}
+                                        className='form-control'
+                                        placeholder='Subject'
+                                    />{' '}
+
                                 </FormGroup>
                                 <FormGroup row>
                                     <Label htmlFor='message'>
                                         Message
                                     </Label>
-                                    <Col>
-                                        <Field
-                                            name='message'
-                                            as='textarea'
-                                            rows='12'
-                                            onChange={formik.handleChange}
-                                            className='form-control'
-                                            placeholder='message'
-                                        />
-                                    </Col>
+
+                                    <Field
+                                        name='message'
+                                        as='textarea'
+                                        rows='12'
+                                        onChange={formik.handleChange}
+                                        className='form-control'
+                                        placeholder='message'
+                                    />
+
                                 </FormGroup>
                                 <FormGroup row>
-                                    <Col className='btn float-right'>
-                                        <Button
-                                            type='submit'
-                                            color='primary'
-                                        >
-                                            Send
-                                        </Button>
-                                    </Col>
+
+                                    <Button
+                                        type='submit'
+                                        color='primary'
+                                    >
+                                        Send
+                                    </Button>
+
                                 </FormGroup>
                             </Form>
                         </Formik>
