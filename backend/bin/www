@@ -1,24 +1,25 @@
 const app = require('../app');
 const debug = require('debug')('backend:server');
-const http = require('http');
 const https = require('https');
 const fs = require('fs');
 
+
 //Get port from environment and store in Express:
-const port = normalizePort(process.env.PORT || '443');
+const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+app.set('secPort', port + 443);
 
 
 // Obtaining the certificate and private key:
 const options = {
   key: fs.readFileSync(__dirname + '/server.key'),
-  cert: fs.readFileSync(__dirname + '/server.cert')
+  cert: fs.readFileSync(__dirname + '/server.crt')
 }
 // Use the option above to configure server:
 const secureServer = https.createServer(options, app);
 // Listening to secure server:
-secureServer.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
+secureServer.listen(app.get('secPort'), () => {
+  console.log('Server is listening on port', app.get('secPort'));
 });
 secureServer.on('error', onError);
 secureServer.on('listening', onListening);
