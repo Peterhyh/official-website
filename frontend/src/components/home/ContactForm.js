@@ -6,7 +6,7 @@ import { validateContactForm } from '../../utils/validateContactForm';
 
 const ContactForm = () => {
 
-    const handleSubmit = (values) => {
+    const handleSubmit = (values, { resetForm }) => {
         axios.post('https://3.93.217.85:8000/contact', {
             email: values.email,
             subject: values.subject,
@@ -16,6 +16,8 @@ const ContactForm = () => {
                 response.json()
             })
             .catch(err => new Error(err));
+        resetForm();
+        alert('Message sent successfully!')
     };
 
     return (
