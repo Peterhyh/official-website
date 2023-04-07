@@ -1,32 +1,22 @@
-import { Formik, Form, Field, useFormik } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Button, Label, Col, FormGroup, Card, Container, Row } from 'reactstrap';
 import axios from 'axios';
+import { validateContactForm } from '../../utils/validateContactForm';
 
 
 const ContactForm = () => {
 
-    const formik = useFormik({
-        initialValues: {
-            email: '',
-            subject: '',
-            message: ''
-        },
-        onSubmit: (values) => {
-            axios.post('https://3.93.217.85:8000/contact', {
-                email: values.email,
-                subject: values.subject,
-                message: values.message
+    const handleSubmit = (values) => {
+        axios.post('https://3.93.217.85:8000/contact', {
+            email: values.email,
+            subject: values.subject,
+            message: values.message
+        })
+            .then((response) => {
+                response.json()
             })
-                .then((response) => {
-                    response.json()
-                })
-                .then((data) => {
-                    alert(JSON.stringify(data));
-
-                })
-                .catch(err => new Error(err));
-        }
-    });
+            .catch(err => new Error(err));
+    };
 
     return (
 
@@ -40,60 +30,61 @@ const ContactForm = () => {
             <Row>
                 <Col className='d-flex justify-content-center mb-5' >
                     <Card className='p-4 rounded-6 border-5' style={{ backgroundColor: '#1E1E1EC4' }}>
-                        <Formik>
-                            <Form onSubmit={formik.handleSubmit}>
+                        <Formik
+                            initialValues={{
+                                email: '',
+                                subject: '',
+                                message: ''
+                            }}
+                            validate={validateContactForm}
+                            onSubmit={handleSubmit}
+                        >
+                            <Form>
                                 <FormGroup row>
                                     <Label htmlFor='email'>
                                         Email
                                     </Label>
-
                                     <Field
                                         name='email'
                                         type='email'
-                                        onChange={formik.handleChange}
                                         className='form-control'
                                         placeholder='Your email address'
                                     />
-
+                                    <ErrorMessage name='email'>
+                                        {(msg) => <p className='text-danger'>{msg}</p>}
+                                    </ErrorMessage>
                                 </FormGroup>
                                 <FormGroup row>
                                     <Label htmlFor='subject'>
                                         Subject
                                     </Label>
-
                                     <Field
                                         name='subject'
                                         type='text'
-                                        onChange={formik.handleChange}
                                         className='form-control'
                                         placeholder='Subject'
-                                    />{' '}
-
+                                    />
+                                    <ErrorMessage name='subject'>
+                                        {(msg) => <p className='text-danger'>{msg}</p>}
+                                    </ErrorMessage>
                                 </FormGroup>
                                 <FormGroup row>
                                     <Label htmlFor='message'>
                                         Message
                                     </Label>
-
                                     <Field
                                         name='message'
                                         as='textarea'
                                         rows='12'
-                                        onChange={formik.handleChange}
                                         className='form-control'
-                                        placeholder='message'
+                                        placeholder='Message'
                                     />
-
+                                    <ErrorMessage name='message'>
+                                        {(msg) => <p className='text-danger'>{msg}</p>}
+                                    </ErrorMessage>
                                 </FormGroup>
                                 <FormGroup row>
-
-                                    <Button
-                                        type='submit'
-                                        color='primary'
-                                    >
-                                        Send
-                                    </Button>
-
+                                    <Button type='submit' color='primary'>Send</Button>
                                 </FormGroup>
                             </Form>
                         </Formik>

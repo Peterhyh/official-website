@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const cors = require('cors');
+require('dotenv').config();
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
@@ -10,7 +12,7 @@ const contactRouter = require('./routes/contactRouter');
 
 // connecting to mongodb
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://peterhyh:KXMoyvSpMSdtAKvI@peterhyhcluster.n1g4sb0.mongodb.net/?retryWrites=true&w=majority';
+const uri = process.env.MONGO_URI;
 async function connect() {
   try {
     await mongoose.connect(uri);
@@ -23,6 +25,11 @@ async function connect() {
 connect();
 
 const app = express();
+app.use(
+  cors({
+    origin: "https://peterhyh.com",
+  })
+)
 
 //Redirecting all unsecure ports to secure port:
 app.all('*', (req, res, next) => {
