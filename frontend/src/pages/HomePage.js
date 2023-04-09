@@ -12,7 +12,7 @@ const HomePage = () => {
             <ProfileContent />
             <Projects />
             <Certificates />
-            <ContactForm />
+            {/* <ContactForm /> */}
         </div>
     )
 };
