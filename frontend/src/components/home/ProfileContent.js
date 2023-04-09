@@ -14,14 +14,14 @@ const ProfileContent = () => {
             <Row className='d-flex justify-content-center align-items-center'>
                 <Col className=' d-flex justify-content-center align-items-center' >
                     <div ref={picRef}>
-                        <img className={`${'profile-pic'} ${showPic ? 'show-pic' : ''}`} src={me} alt='A photograph of Peter Huynh' />
+                        <img className={`${showPic ? 'show-pic' : ''} ${'profile-pic'}`} src={me} alt='A photograph of Peter Huynh' />
                     </div>
                 </Col>
             </Row>
             <Row className='d-flex justify-content-center align-items-center'>
                 <Col className='d-flex justify-content-center align-items-center mt-5' xs='10' >
                     <div ref={introRef} >
-                        <span className={`${'intro'} ${showIntro ? 'animateIntro' : ''}`}>
+                        <span className={`${showIntro ? 'animateIntro' : ''} ${'intro'}`}>
                             Hi there! My name is Peter Huynh and I graduated the backend and full stack programs
                             at Nucamp with honors. I have a great passion for coding and ready to put my skills to
                             the test in a professional setting. I also enjoy photography, automotives, 3D printing,

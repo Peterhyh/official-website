@@ -228,6 +228,7 @@ Form {
 
 .intro {
   display: inline-block;
+  text-align: center;
   font-size: 2rem;
   line-height: 1.3;
   letter-spacing: -.025em;
@@ -243,7 +244,7 @@ Form {
 
 @keyframes animate-intro {
   0% {
-    transform: skewX(50deg) translateX(-1000px);
+    transform: skewX(-50deg) translateX(1000px);
     opacity: 0
   }
 
@@ -378,4 +379,17 @@ Form {
 /* ContactForm------------------------------------------------------------------------------*/
 .contact-title {
   color: #fff;
+}
+
+/* Skills------------------------------------------------------------------------------*/
+.skills-title {
+  color: #fff;
+}
+
+.skills-cardbody {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  color: #fff;
+  display: flex;
+  height: 320px;
 }

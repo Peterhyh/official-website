@@ -25,13 +25,10 @@ const HomeBanner = () => {
 
         <animated.div style={fade}>
             <Parallax md='7' strength={100} bgImage={banner}>
-                <div>
-                    <Header />
-                </div>
                 <div className='content d-flex justify-content-center align-items-center'>
                     <div className='banner-title'>
                         <p className='banner-name'>PETER HUYNH</p>
-                        <p className='banner-description'>SOFTWARE DEVELOPER | PHOTOGRAPHER </p>
+                        <p className='banner-description'>FULL STACK ENGINEER | PHOTOGRAPHER </p>
                     </div>
                     <div className='text-content'>
                         <img className='peter-signiture' src={Signiture} alt='Peter Huynh Signiture' />
