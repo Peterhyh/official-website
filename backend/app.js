@@ -12,7 +12,7 @@ const contactRouter = require('./routes/contactRouter');
 
 // connecting to mongodb
 const mongoose = require('mongoose');
-const uri = 'mongodb+srv://peterhyh:KXMoyvSpMSdtAKvI@peterhyhcluster.n1g4sb0.mongodb.net/?retryWrites=true&w=majority';
+const uri = process.env.MONGO_URI;
 async function connect() {
   try {
     await mongoose.connect(uri);
