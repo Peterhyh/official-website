@@ -12,7 +12,7 @@ const contactRouter = require('./routes/contactRouter');
 
 // connecting to mongodb
 const mongoose = require('mongoose');
-const uri = process.env.MONGO_URI;
+const uri = 'mongodb+srv://peterhyh:KXMoyvSpMSdtAKvI@peterhyhcluster.n1g4sb0.mongodb.net/?retryWrites=true&w=majority';
 async function connect() {
   try {
     await mongoose.connect(uri);
@@ -39,6 +39,8 @@ app.use(cookieParser());
 // Authentication middleware above the static files because user must authenticate before accessing data from the server
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/', indexRouter);
+app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 
 // catch 404 and forward to error handler

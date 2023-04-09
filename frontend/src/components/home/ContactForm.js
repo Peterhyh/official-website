@@ -7,17 +7,17 @@ import { validateContactForm } from '../../utils/validateContactForm';
 const ContactForm = () => {
 
     const handleSubmit = (values, { resetForm }) => {
-        axios.post('http://3.93.217.85/contact', {
+        axios.post('/backend/insert', {
             email: values.email,
             subject: values.subject,
             message: values.message
         })
-            .then((response) => {
-                response.json()
+            .then(() => {
+                alert('success post')
             })
             .catch(err => new Error(err));
         resetForm();
-        alert('Message sent successfully!')
+        document.location.reload();
     };
 
     return (
