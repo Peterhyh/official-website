@@ -7,7 +7,7 @@ import { validateContactForm } from '../../utils/validateContactForm';
 const ContactForm = () => {
 
     const handleSubmit = (values, { resetForm }) => {
-        axios.post('https://3.93.217.85:8000/contact', {
+        axios.post('http://3.93.217.85/contact', {
             email: values.email,
             subject: values.subject,
             message: values.message
@@ -21,8 +21,6 @@ const ContactForm = () => {
     };
 
     return (
-
-
         <Container>
             <Row>
                 <Col className='contact-title p-5 d-flex justify-content-center'>

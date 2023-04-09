@@ -25,21 +25,7 @@ async function connect() {
 connect();
 
 const app = express();
-app.use(
-  cors({
-    origin: "https://peterhyh.com",
-  })
-)
-
-//Redirecting all unsecure ports to secure port:
-app.all('*', (req, res, next) => {
-  if (req.secure) {
-    return next();
-  } else {
-    console.log(`Redirecting to https://${req.hostname}:${app.get('secPort')}${req.url}`);
-    res.redirect(301, `Redirecting to https://${req.hostname}:${app.get('secPort')}${req.url}`);
-  }
-})
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -53,8 +39,6 @@ app.use(cookieParser());
 // Authentication middleware above the static files because user must authenticate before accessing data from the server
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 
 // catch 404 and forward to error handler

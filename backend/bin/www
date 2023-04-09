@@ -5,9 +5,10 @@ const fs = require('fs');
 
 
 //Get port from environment and store in Express:
-const port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3443');
 app.set('port', port);
-app.set('secPort', port + 443);
+
+app.listen(port, () => console.log(`Listening on ${port}`));
 
 
 // Obtaining the certificate and private key:
@@ -18,9 +19,7 @@ const options = {
 // Use the option above to configure server:
 const secureServer = https.createServer(options, app);
 // Listening to secure server:
-secureServer.listen(app.get('secPort'), () => {
-  console.log('Server is listening on port', app.get('secPort'));
-});
+secureServer.listen(8000);
 secureServer.on('error', onError);
 secureServer.on('listening', onListening);
 
