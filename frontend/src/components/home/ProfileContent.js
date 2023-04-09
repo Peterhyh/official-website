@@ -22,7 +22,12 @@ const ProfileContent = () => {
                 <Col className='d-flex justify-content-center align-items-center mt-5' xs='10' >
                     <div ref={introRef} >
                         <span className={`${'intro'} ${showIntro ? 'animateIntro' : ''}`}>
-                            Hi there! My name is Peter Huynh and I graduated from a coding bootcamp called Nucamp. The purpose of this website is to display my coding projects and accomplishments. Feel free to look around and thank you for visiting my website!
+                            Hi there! My name is Peter Huynh and I graduated the backend and full stack programs
+                            at Nucamp with honors. I have a great passion for coding and ready to put my skills to
+                            the test in a professional setting. I also enjoy photography, automotives, 3D printing,
+                            and building gaming PC's. I love figuring out how something works and being able to
+                            replicate/build it myself and eventually make it better than the original. My favorite part
+                            about this process is discovering an original idea of my own along the way.
                         </span>
                     </div>
                 </Col>
