@@ -4,7 +4,6 @@ import banner from '../../app/assets/img/sunset.jpg';
 import { useSpring, animated } from 'react-spring';
 import { useEffect, useState } from 'react';
 import Signiture from '../../app/assets/img/bsigniture.png';
-import Header from "../Header";
 
 
 
@@ -28,7 +27,7 @@ const HomeBanner = () => {
                 <div className='content d-flex justify-content-center align-items-center'>
                     <div className='banner-title'>
                         <p className='banner-name'>PETER HUYNH</p>
-                        <p className='banner-description'>FULL STACK ENGINEER | PHOTOGRAPHER </p>
+                        <p className='banner-description'>FULL STACK DEVELOPER </p>
                     </div>
                     <div className='text-content'>
                         <img className='peter-signiture' src={Signiture} alt='Peter Huynh Signiture' />

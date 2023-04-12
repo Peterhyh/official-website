@@ -1,10 +1,9 @@
 import { Container, Col, Row } from 'reactstrap';
-import ProjectVideos from '../ProjectVideos';
-
+import ProjectDemoCards from '../ProjectDemoCards';
 
 const Projects = () => {
     return (
-        <Container>
+        <Container className='row-content'>
             <Row className='mini-projects p-5'>
                 <Col className='d-flex justify-content-center'>
                     <h1>Projects</h1>
@@ -12,7 +11,7 @@ const Projects = () => {
             </Row>
             <Row>
                 <Col>
-                    <ProjectVideos />
+                    <ProjectDemoCards />
                 </Col>
             </Row>
         </Container>

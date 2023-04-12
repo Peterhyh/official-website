@@ -21,6 +21,7 @@ h3,
   font-size: 1.25rem;
 }
 
+
 /* PhotographDetails------------------------------------------------------------------------------*/
 .card-text {
   color: #fff;
@@ -240,6 +241,14 @@ Form {
 .animateIntro {
   animation-duration: 2s;
   animation-name: animate-intro;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  max-width: 95rem;
+  width: 100%;
+  color: #777777;
 }
 
 @keyframes animate-intro {
@@ -277,9 +286,6 @@ Form {
 }
 
 /* Certificates------------------------------------------------------------------------------*/
-.certificates-section {
-  color: #fff;
-}
 
 .honor-certificate {
   display: inline-block;
@@ -294,67 +300,6 @@ Form {
 
 .h-cert {
   display: inline-block;
-}
-
-.animate-left {
-  animation-name: left-animate;
-  animation-duration: 2s;
-}
-
-@keyframes left-animate {
-  0% {
-    transform: skewX(50deg) translateX(-1000px);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  50% {
-    transform: skewX(-5deg) translateX(80px);
-    animation-timing-function: ease-in;
-    opacity: 1
-  }
-
-
-  70% {
-    transform: translateX(-100px);
-    animation-timing-function: ease-in;
-  }
-
-  100% {
-    transform: skewX(-5deg) translateX(0px);
-    animation-timing-function: ease-in;
-  }
-}
-
-
-.animate-right {
-  animation-name: right-animate;
-  animation-duration: 2s;
-}
-
-@keyframes right-animate {
-  0% {
-    transform: skewX(-50deg) translateX(1000px);
-    animation-timing-function: ease-in;
-    opacity: 0;
-  }
-
-  50% {
-    transform: skewX(5deg) translateX(-80px);
-    animation-timing-function: ease-in;
-    opacity: 1
-  }
-
-
-  70% {
-    transform: translateX(100px);
-    animation-timing-function: ease-in;
-  }
-
-  100% {
-    transform: skewX(5deg) translateX(0px);
-    animation-timing-function: ease-in;
-  }
 }
 
 /*Projects------------------------------------------------------------------------------*/
@@ -392,4 +337,27 @@ Form {
   color: #fff;
   display: flex;
   height: 320px;
+}
+
+.projects-card-img {
+  height: 200px;
+  width: 200px;
+  object-fit: fill;
+}
+
+.project-cards {
+  background-color: #202428;
+  height: 270px;
+}
+
+.projects-button-container {
+  background-color: #202428;
+}
+
+.projects-button {
+  text-decoration: none;
+  color: #FFD700;
+  height: 40px;
+  width: 40px;
+  margin: 10px;
 }
