@@ -4,28 +4,29 @@ import { Container, Col, Row } from 'reactstrap';
 const ProfileContent = () => {
 
     return (
-        <Container className='row-content' >
-            <Row>
-                <Col className='d-flex justify-content-center'>
-                    <h1 class='text-white'>About Me</h1>
-                </Col>
-            </Row>
-            <Row className='d-flex justify-content-center align-items-center'>
-                <Col className='d-flex justify-content-center align-items-center mt-5' xs='10' >
-                    <div>
-                        <span className='intro' >
-                            Hi there! My name is Peter Huynh and I graduated the backend and full stack programs
-                            at Nucamp with honors. I have a great passion for coding and ready to put my skills to
-                            the test in a professional setting. I also enjoy photography, automotives, 3D printing,
-                            and building gaming PC's. I love figuring out how something works and being able to
-                            replicate/build it myself and eventually make it better than the original. My favorite part
-                            about the process is discovering an original idea of my own along the way.
-                        </span>
-                    </div>
-                </Col>
-            </Row>
-        </Container >
+        <div className='bio-container'>
+            <div className='profile-bio-container' >
+                <div >
+                    <span >
+                        Hi there! My name is Peter Huynh and I graduated the backend and full stack programs
+                        at Nucamp with honors. I have a great passion for coding and ready to put my skills to
+                        the test in a professional setting. I also enjoy photography, automotives, 3D printing,
+                        and building gaming PC's. I love figuring out how something works and being able to
+                        replicate/build it myself and eventually make it better than the original. My favorite part
+                        about the process is discovering an original idea of my own along the way.
+                    </span>
+                </div>
+            </div>
+            <div className='profile-title-container' >
+                <div className='intro-title' >
+                    <h1 >About Me</h1>
+                </div>
+            </div >
+        </div>
+
+
     )
+
 }
 
 

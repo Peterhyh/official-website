@@ -9,8 +9,9 @@ import Skills from '../components/home/Skills';
 const HomePage = () => {
     return (
         <div>
-            <HomeBanner />
             <ProfileContent />
+            <HomeBanner />
+
             <Skills />
             <Projects />
             <Certificates />
