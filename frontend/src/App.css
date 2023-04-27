@@ -251,3 +251,36 @@ Form {
   width: 40px;
   margin: 10px;
 }
+
+.bio-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.bio {
+  padding: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  color: #000;
+}
+
+.aboutme {
+  position: absolute;
+  font-size: 7rem;
+  transform: translateX(-1000px);
+  color: #000;
+  transition-duration: 0.3s;
+}
+
+.aboutme-show {
+  position: absolute;
+  font-size: 7rem;
+  transform: translateX(0px);
+  color: #000;
+}
