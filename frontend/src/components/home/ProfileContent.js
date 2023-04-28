@@ -1,33 +1,15 @@
-import { useState, useEffect } from 'react';
+
+// import Typewriter from "typewriter-effect";
 
 
 const ProfileContent = () => {
 
-    const [slideIn, setSlideIn] = useState(false);
-
-    useEffect(() => {
-
-        aboutme.forEach(element => observer.observe(element));
-    },);
-
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                setSlideIn(true);
-            } else {
-                setSlideIn(false);
-            }
-        })
-    })
-
-    const aboutme = document.querySelectorAll('.aboutme');
-
-
-
     return (
         <div className='bio-container'>
-            <h1 className={slideIn ? 'aboutme-show' : 'aboutme'}>About Me</h1>
-            <p className='bio'>Hi there! My name is Peter Huynh and I graduated the backend and full stack programs
+            <h1 className='bio-title'>About Me</h1>
+            <hr className='horizontalLine' />
+            <p className='bio-description'>
+                Hi there! My name is Peter Huynh and I graduated the backend and full stack programs
                 at Nucamp with honors. I have a great passion for coding and ready to put my skills to
                 the test in a professional setting. I also enjoy photography, automotives, 3D printing,
                 and building gaming PC's. I love figuring out how something works and being able to

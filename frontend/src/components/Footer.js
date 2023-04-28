@@ -23,11 +23,6 @@ const Footer = () => {
 
                     </Col>
                 </Row>
-                <Row >
-                    <Col className='d-flex justify-content-center mt-3'>
-                        <h7>Developed by Peter Huynh</h7>
-                    </Col>
-                </Row>
             </Container>
         </footer>
     )

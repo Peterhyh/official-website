@@ -10,8 +10,6 @@ const HomePage = () => {
     return (
         <div>
             <ProfileContent />
-            <HomeBanner />
-
             <Skills />
             <Projects />
             <Certificates />
