@@ -303,3 +303,52 @@ Form {
   padding: 100px;
   font-size: 2rem;
 }
+
+.card-container {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transform: 0.3s;
+  animation: ease-in
+}
+
+.card-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.image-container img {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-title h3 {
+  color: #000;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.card-container {
+  border-radius: 10px;
+}
+
+.card-body p {
+  color: #000;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-buttons a:hover {
+  transform: scale(1.1);
+}
