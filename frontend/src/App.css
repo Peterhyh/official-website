@@ -257,7 +257,8 @@ Form {
 }
 
 .card-title h3 {
-  color: #000;
+  color: #fff;
+  font-weight: bold;
 }
 
 .projects-container {
@@ -273,6 +274,10 @@ Form {
   overflow-y: scroll;
   border-radius: 10px;
   height: 50%;
+}
+
+.card-body {
+  background-color: #CFCDCE;
 }
 
 .card-body p {
