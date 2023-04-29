@@ -1,20 +1,46 @@
-import { Container, Row, Col } from 'reactstrap';
-import FS from '../../app/assets/img/honorFullStack.png';
-import BE from '../../app/assets/img/backend.png';
-import python from '../../app/assets/img/python.png';
-import webDev from '../../app/assets/img/webDevFundamentals.png';
-import sql from '../../app/assets/img/sql.png';
-import devOps from '../../app/assets/img/devops.png';
-import BS from '../../app/assets/img/bootstrap.png';
-import react from '../../app/assets/img/react.png';
-import RN from '../../app/assets/img/reactNative.png';
-import mongo from '../../app/assets/img/mongodb.png';
+import FS from '../../../app/assets/img/honorFullStack.png';
+import BE from '../../../app/assets/img/backend.png';
+import { useState } from 'react';
+import Modal from './Modal';
+
+
+// import python from '../../app/assets/img/python.png';
+// import webDev from '../../app/assets/img/webDevFundamentals.png';
+// import sql from '../../app/assets/img/sql.png';
+// import devOps from '../../app/assets/img/devops.png';
+// import BS from '../../app/assets/img/bootstrap.png';
+// import react from '../../app/assets/img/react.png';
+// import RN from '../../app/assets/img/reactNative.png';
+// import mongo from '../../app/assets/img/mongodb.png';
 
 
 
 const Certificates = () => {
+
+    const [openFullStackModal, setOpenFullStackModal] = useState(false);
+
     return (
         <>
+            <h1 className='certificate-title'>Certificates</h1>
+            <div className='certificate-container'>
+                <div className='certficiate'>
+                    <img onClick={() => setOpenFullStackModal(!openFullStackModal)} className='honor-certificate' src={FS} alt='Full Stack Honor Certificate' />
+                </div>
+                <div className='certficiate'>
+                    <img className='honor-certificate' src={BE} alt='Backend Honor Certificate' />
+                </div>
+                <Modal openFullStackModal={openFullStackModal} >
+                    Fancy
+                </Modal>
+            </div>
+
+        </>
+    )
+};
+
+export default Certificates;
+
+{/* <>
             <Container>
                 <Row>
                     <Col className='certificates-section d-flex justify-content-center p-5'>
@@ -68,8 +94,4 @@ const Certificates = () => {
                     </Col>
                 </Row>
             </Container>
-        </>
-    )
-};
-
-export default Certificates;
+        </> */}

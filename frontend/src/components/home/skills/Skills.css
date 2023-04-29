@@ -1,0 +1,44 @@
+.skill-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.skills-title {
+    color: #CFCDCE;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.skill-card {
+    height: 500px;
+    width: 500px;
+    background-color: #CFCDCE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    box-shadow: 5px 5px 15px -5px;
+}
+
+.skill-card div {
+    margin: 20px;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.skill-card h1 {
+    align-self: center;
+    color: #FFF;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 500px;
+}

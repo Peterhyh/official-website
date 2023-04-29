@@ -1,9 +1,7 @@
-import Certificates from '../components/home/Certificates';
-import HomeBanner from '../components/home/HomeBanner';
+import Certificates from '../components/home/certificate/Certificates';
 import ProfileContent from '../components/home/ProfileContent';
-import Projects from '../components/home/Projects';
-import ContactForm from '../components/home/ContactForm';
-import Skills from '../components/home/Skills';
+import ProjectDemoCards from '../components/home/ProjectDemoCards';
+import Skills from '../components/home/skills/Skills';
 
 
 const HomePage = () => {
@@ -11,9 +9,8 @@ const HomePage = () => {
         <div>
             <ProfileContent />
             <Skills />
-            <Projects />
+            <ProjectDemoCards />
             <Certificates />
-            {/* <ContactForm /> */}
         </div>
     )
 };

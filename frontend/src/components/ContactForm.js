@@ -1,7 +1,7 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { Button, Label, Col, FormGroup, Card, Container, Row } from 'reactstrap';
 import axios from 'axios';
-import { validateContactForm } from '../../utils/validateContactForm';
+import { validateContactForm } from '../utils/validateContactForm';
 
 
 const ContactForm = () => {

@@ -205,81 +205,11 @@ Form {
   color: #fff;
 }
 
-/* SubHeader------------------------------------------------------------------------------*/
-.home-bc {
-  text-decoration: none;
-  color: #fff;
-}
-
-
-/* ContactForm------------------------------------------------------------------------------*/
-.contact-title {
-  color: #fff;
-}
 
 /* Skills------------------------------------------------------------------------------*/
-.skill-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  position: relative;
-}
-
-.skills-title {
-  position: absolute;
-  top: 7%;
-  left: 10%;
-  color: #CFCDCE;
-  font-size: 5rem;
-  font-weight: bold;
-}
-
-.skill-card {
-  height: 500px;
-  width: 500px;
-  background-color: #CFCDCE;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  margin: 50px;
-}
-
-.skill-card-title {
-  position: absolute;
-  top: 10px;
-  border-bottom: 1px solid #000;
-}
 
 
-.projects-card-img {
-  height: 200px;
-  width: 200px;
-  object-fit: fill;
-}
-
-.project-cards {
-  background-color: #202428;
-  height: 270px;
-}
-
-.projects-button-container {
-  background-color: #202428;
-}
-
-.projects-button {
-  text-decoration: none;
-  color: #FFD700;
-  height: 40px;
-  width: 40px;
-  margin: 10px;
-}
-
+/*ProfileContent--------------------------------------*/
 .bio-container {
   height: 100vh;
   flex-direction: column;
@@ -290,8 +220,8 @@ Form {
 
 .bio-title {
   position: absolute;
-  top: 17%;
-  left: 10%;
+  top: 15%;
+  left: 107px;
   color: #CFCDCE;
   font-size: 5rem;
   font-weight: bold;
@@ -303,6 +233,10 @@ Form {
   padding: 100px;
   font-size: 2rem;
 }
+
+
+/*ProjectDemoCards--------------------------------------*/
+
 
 .card-container {
   width: 300px;
@@ -330,12 +264,15 @@ Form {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
+  flex-flow: row wrap;
 }
 
 .card-container {
+  overflow-y: scroll;
   border-radius: 10px;
+  height: 50%;
 }
 
 .card-body p {
@@ -344,11 +281,48 @@ Form {
 
 .card-buttons {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-evenly;
 }
 
 .card-buttons a:hover {
   transform: scale(1.1);
+}
+
+.project-title {
+  color: #CFCDCE;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.projects-button {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+/*Certificates--------------------------------------*/
+.certificate-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+
+.certificate-title {
+  color: #CFCDCE;
+  font-size: 5rem;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.certficiate img {
+  box-shadow: 0 0 15px -5px;
+  cursor: pointer;
+}
+
+.certficiate img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px 0px;
 }
