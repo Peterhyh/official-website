@@ -1,6 +1,6 @@
 
 // import Typewriter from "typewriter-effect";
-
+import './Bio.css';
 
 const ProfileContent = () => {
 

@@ -1,0 +1,23 @@
+.bio-container {
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-title {
+    position: absolute;
+    top: 15%;
+    left: 107px;
+    color: #CFCDCE;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.bio-description {
+    color: #000;
+    display: flex;
+    padding: 100px;
+    font-size: 2rem;
+}
