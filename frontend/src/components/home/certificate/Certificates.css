@@ -1,0 +1,24 @@
+.certificate-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.certificate-title {
+    color: #CFCDCE;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.certficiate img {
+    box-shadow: 0 0 15px -5px;
+    cursor: pointer;
+}
+
+.certficiate img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0px;
+}

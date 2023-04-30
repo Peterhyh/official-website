@@ -2,7 +2,7 @@ import FS from '../../../app/assets/img/honorFullStack.png';
 import BE from '../../../app/assets/img/backend.png';
 import { useState } from 'react';
 import Modal from './Modal';
-
+import './Certificates.css';
 
 // import python from '../../app/assets/img/python.png';
 // import webDev from '../../app/assets/img/webDevFundamentals.png';
