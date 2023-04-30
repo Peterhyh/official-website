@@ -192,18 +192,3 @@ Form {
 .h-cert {
   display: inline-block;
 }
-
-/*Projects------------------------------------------------------------------------------*/
-.bmi-container {
-  background-color: rgba(113, 112, 112, 0.4);
-  width: 50%;
-  border-radius: 10px;
-  color: #fff;
-}
-
-.mini-projects {
-  color: #fff;
-}
-
-
-/* Skills------------------------------------------------------------------------------*/
