@@ -2,10 +2,10 @@ import './Skills.css';
 
 const Skills = () => {
     return (
-        <>
+        <div className='skill-container'>
             <h1 className='skills-title'>Skills</h1>
-            <div className='skill-container'>
-                <card className='skill-card'>
+            <div className='skill-row'>
+                <div className='skill-card'>
                     <h1>Frontend</h1>
                     <div>
                         <dl>
@@ -16,9 +16,9 @@ const Skills = () => {
                             <dt>React Native</dt>
                         </dl>
                     </div>
-                </card>
+                </div>
 
-                <card className='skill-card'>
+                <div className='skill-card'>
                     <h1>Backend</h1>
                     <div>
                         <dl>
@@ -35,9 +35,9 @@ const Skills = () => {
                             <dt>REST API</dt>
                         </dl>
                     </div>
-                </card>
+                </div>
 
-                <card className='skill-card'>
+                <div className='skill-card'>
                     <h1>Others</h1>
                     <div>
                         <dl>
@@ -55,9 +55,9 @@ const Skills = () => {
                             <dt>DevOps</dt>
                         </dl>
                     </div>
-                </card>
+                </div>
             </div>
-        </>
+        </div>
     )
 };
 

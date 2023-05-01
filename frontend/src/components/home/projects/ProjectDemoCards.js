@@ -8,10 +8,12 @@ import './Projects.css';
 
 const ProjectDemoCards = () => {
     return (
-        <>
+        <div className='projects-container'>
+
             <h1 className='project-title'>Projects</h1>
-            <div className='projects-container'>
-                <div className='card-container'>
+
+            <div className='project-row'>
+                <div className='project-card'>
                     <div className='image-container'>
                         <img src={SweetlyDental} alt='' />
                     </div>
@@ -33,7 +35,7 @@ const ProjectDemoCards = () => {
                     </div>
                 </div>
 
-                <div className='card-container'>
+                <div className='project-card'>
                     <div className='image-container'>
                         <img src={Blackjack} alt='' />
                     </div>
@@ -48,14 +50,15 @@ const ProjectDemoCards = () => {
                             <a href='https://www.youtube.com/watch?v=_VLc779betI&ab_channel=PeterHuynh' target='_blank' rel='noopener'>
                                 <img className='projects-button' src={YouTubeSVG} alt='Computer icon' />
                             </a>
-                            <a color='primary' outline href='https://github.com/Peterhyh/BlackJack' target='_blank' rel='noopener'>
+                            <a href='https://github.com/Peterhyh/BlackJack' target='_blank' rel='noopener'>
                                 <img className='projects-button' src={GitHubSVG} alt='GitHub icon' />
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div className='card-container'>
+
+                <div className='project-card'>
                     <div className='image-container'>
                         <img src={Pharmacy} alt='' />
                     </div>
@@ -64,20 +67,21 @@ const ProjectDemoCards = () => {
                             <h3>Pharmacy Database</h3>
                         </div>
                         <div>
-                            <p>{'Blackjack CLI game was created using Python'}</p>
+                            <p>{'Fullstack MERN application allows you to input prescription data for a patient and register users.'}</p>
                         </div>
                         <div className='card-buttons'>
                             <a href='http://herbapharmacy.com' target='_blank' rel='noopener'>
                                 <img className='projects-button' src={ComputerSVG} alt='Computer icon' />
                             </a>
-                            <a color='primary' outline href='https://github.com/Peterhyh/prescripton-database-2.0' target='_blank' rel='noopener'>
+                            <a href='https://github.com/Peterhyh/prescripton-database-2.0' target='_blank' rel='noopener'>
                                 <img className='projects-button' src={GitHubSVG} alt='GitHub icon' />
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+
+        </div>
     )
 };
 
