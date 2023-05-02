@@ -3,6 +3,7 @@
     margin-bottom: 200px;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
 }
 
@@ -10,6 +11,9 @@
     color: #CFCDCE;
     font-size: 5rem;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .certficiate img {
@@ -22,4 +26,11 @@
 .certficiate img:hover {
     transform: scale(1.1);
     box-shadow: 0 0 15px 0px;
+}
+
+.certificate-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }

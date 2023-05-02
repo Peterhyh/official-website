@@ -4,15 +4,12 @@ import GitHubSVG from '../../../app/assets/img/github.svg';
 import Blackjack from '../../../app/assets/img/blackjack.png';
 import YouTubeSVG from '../../../app/assets/img/youtube.svg';
 import Pharmacy from '../../../app/assets/img/pharmacy.png';
-import Parallax from 'react-parallax';
 import './Projects.css';
 
 const ProjectDemoCards = () => {
     return (
         <div className='projects-container'>
-
             <h1 className='project-title'>Projects</h1>
-
             <div className='project-row'>
                 <div className='project-card'>
                     <div className='image-container'>

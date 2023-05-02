@@ -20,21 +20,20 @@ const Certificates = () => {
     const [openFullStackModal, setOpenFullStackModal] = useState(false);
 
     return (
-        <>
+        <div className='certificate-container'>
             <h1 className='certificate-title'>Certificates</h1>
-            <div className='certificate-container'>
+            <div className='certificate-row'>
                 <div className='certficiate'>
                     <img onClick={() => setOpenFullStackModal(!openFullStackModal)} className='honor-certificate' src={FS} alt='Full Stack Honor Certificate' />
                 </div>
                 <div className='certficiate'>
                     <img className='honor-certificate' src={BE} alt='Backend Honor Certificate' />
                 </div>
-                <Modal openFullStackModal={openFullStackModal} >
-                    Fancy
-                </Modal>
             </div>
-
-        </>
+            <Modal openFullStackModal={openFullStackModal} >
+                Fancy
+            </Modal>
+        </div>
     )
 };
 
