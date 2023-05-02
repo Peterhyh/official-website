@@ -4,6 +4,7 @@ import GitHubSVG from '../../../app/assets/img/github.svg';
 import Blackjack from '../../../app/assets/img/blackjack.png';
 import YouTubeSVG from '../../../app/assets/img/youtube.svg';
 import Pharmacy from '../../../app/assets/img/pharmacy.png';
+import Parallax from 'react-parallax';
 import './Projects.css';
 
 const ProjectDemoCards = () => {
@@ -64,10 +65,10 @@ const ProjectDemoCards = () => {
                     </div>
                     <div className='card-body'>
                         <div className='card-title'>
-                            <h3>Pharmacy Database</h3>
+                            <h3>Herb-A-Pharmacy</h3>
                         </div>
                         <div>
-                            <p>{'Fullstack MERN application allows you to input prescription data for a patient and register users.'}</p>
+                            <p>{'Fullstack MERN pharmacy database application allows you to store prescription information for patients. This application allows you to register as an authorized user to input patient information.'}</p>
                         </div>
                         <div className='card-buttons'>
                             <a href='http://herbapharmacy.com' target='_blank' rel='noopener'>

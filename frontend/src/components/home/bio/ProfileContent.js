@@ -1,6 +1,7 @@
 
 // import Typewriter from "typewriter-effect";
 import './Bio.css';
+import Signiture from '../../../app/assets/img/bsigniture.png';
 
 const ProfileContent = () => {
 
@@ -18,6 +19,9 @@ const ProfileContent = () => {
                     replicate/build it myself and eventually make it better than the original. My favorite part
                     about the process is discovering an original idea of my own along the way.
                 </p>
+            </div>
+            <div className='bio-row'>
+                <img src={Signiture} alt='' />
             </div>
         </div>
     )

@@ -1,15 +1,24 @@
 .bio-container {
+    padding-left: 50px;
+    padding-right: 50px;
     height: 100%;
     flex-direction: column;
     justify-content: center;
     display: flex;
-    overflow-y: scroll;
+    margin-top: 220px;
+    margin-bottom: 220px;
 }
 
 .bio-row {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+.bio-row img {
+    height: 100px;
+    width: 170px;
 }
 
 .bio-title {
@@ -23,6 +32,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 100px;
     font-size: 2rem;
 }

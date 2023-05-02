@@ -114,39 +114,6 @@ Form {
   color: black;
 }
 
-/*HomePage------------------------------------------------------------------------------*/
-/*HomeBanner*/
-.content {
-  height: 100vh;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.text-content {
-  position: absolute;
-  bottom: 7%;
-  left: 1%;
-}
-
-.peter-signiture {
-  height: 7%;
-  width: 20%;
-}
-
-.banner-title {
-  transform: translateY(-50px);
-}
-
-.banner-name {
-  font-size: 40px;
-  text-align: center;
-}
-
-.banner-description {
-  font-size: 20px;
-  text-align: center;
-}
-
 /*Footer------------------------------------------------------------------------------*/
 .site-footer {
   background-color: #CFCDCE;
@@ -156,20 +123,4 @@ Form {
 .footer-social {
   color: #fff;
   font-weight: bold;
-}
-
-/* Certificates------------------------------------------------------------------------------*/
-.honor-certificate {
-  display: inline-block;
-  height: 20rem;
-  width: 17rem;
-}
-
-.fs-certificate {
-  height: 20rem;
-  width: 17rem;
-}
-
-.h-cert {
-  display: inline-block;
 }
