@@ -5,6 +5,15 @@
     border-top-left-radius: 20px;
 }
 
+.card-body div p {
+    text-align: center;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+}
+
 .card-title h3 {
     color: #fff;
     font-weight: bold;
@@ -101,6 +110,10 @@
 
     .card-title h3 {
         font-size: 13px;
+    }
+
+    .card-body div p {
+        font-size: 12px;
     }
 }
 
