@@ -87,12 +87,20 @@
         height: 250px;
         width: 250px;
     }
+
+    .card-title h3 {
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (max-width: 973px) {
     .project-card {
         height: 170px;
         width: 170px;
+    }
+
+    .card-title h3 {
+        font-size: 13px;
     }
 }
 
