@@ -60,7 +60,7 @@ const ProjectDemoCards = () => {
                     <div className='image-container'>
                         <img src={Pharmacy} alt='' />
                     </div>
-                    <div className='card-body'>
+                    <div className='card-body prescription-description'>
                         <div className='card-title'>
                             <h3>Herb-A-Pharmacy</h3>
                         </div>

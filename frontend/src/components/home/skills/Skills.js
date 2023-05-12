@@ -1,6 +1,8 @@
 import './Skills.css';
+import { useState } from 'react';
 
 const Skills = () => {
+
     return (
         <div className='skill-container'>
             <h1 className='skills-title'>Skills</h1>

@@ -8,7 +8,6 @@
 }
 
 .skill-row {
-    flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -35,13 +34,9 @@
 }
 
 .skill-card div {
-    border-radius: 20px;
-    height: 100%;
     display: flex;
     align-self: center;
-    justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .skill-card h1 {
@@ -50,4 +45,39 @@
     margin: 20px;
     padding: 10px;
     border-radius: 500px;
+}
+
+@media only screen and (max-width: 1040px) {
+    .skill-card {
+        height: 250px;
+        width: 250px;
+    }
+
+    .skill-card div {
+        overflow: scroll;
+    }
+
+}
+
+@media only screen and (max-width: 973px) {
+    .skills-title {
+        font-size: 3rem;
+    }
+
+    .skill-card {
+        height: 170px;
+        width: 170px;
+    }
+
+    .skill-container h1 {
+
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width: 647px) {
+    .skill-row {
+        flex-wrap: wrap;
+    }
 }

@@ -22,6 +22,10 @@ h3,
   font-size: 1.25rem;
 }
 
+.hide {
+  visibility: hidden;
+}
+
 /* PhotographDetails------------------------------------------------------------------------------*/
 .card-text {
   color: #fff;

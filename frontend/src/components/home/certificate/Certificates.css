@@ -31,6 +31,20 @@
 .certificate-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 973px) {
+    .certificate-title {
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 973px) {
+    .certficiate img {
+        width: 170px;
+        height: 200px;
+    }
 }
