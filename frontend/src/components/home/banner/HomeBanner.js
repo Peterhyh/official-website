@@ -3,7 +3,6 @@ import { Parallax } from "react-parallax";
 import banner from '../../../app/assets/img/sunset.jpg';
 import { useSpring, animated } from 'react-spring';
 import { useEffect, useState } from 'react';
-import Signiture from '../../../app/assets/img/bsigniture.png';
 import './Banner.css';
 
 
