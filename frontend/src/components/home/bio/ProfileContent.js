@@ -1,7 +1,4 @@
-
-// import Typewriter from "typewriter-effect";
 import './Bio.css';
-import Signiture from '../../../app/assets/img/bsigniture.png';
 import ProfilePic from '../../../app/assets/img/originalProfilePic.jpg';
 
 const ProfileContent = () => {
