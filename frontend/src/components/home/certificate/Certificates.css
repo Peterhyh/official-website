@@ -1,19 +1,17 @@
 .certificate-container {
-    margin-top: 200px;
-    margin-bottom: 200px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
-    justify-content: space-evenly;
+    height: 100vh;
 }
 
 .certificate-title {
     color: rgb(238, 238, 238);
-    font-size: 5rem;
+    font-size: 120px;
     font-family: AvenirHeavy;
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
 }
 
 .certficiate img {

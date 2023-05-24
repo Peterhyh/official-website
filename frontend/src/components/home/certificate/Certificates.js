@@ -1,8 +1,8 @@
 import FS from '../../../app/assets/img/honorFullStack.png';
 import BE from '../../../app/assets/img/backend.png';
 import { useState } from 'react';
-import Modal from './Modal';
 import './Certificates.css';
+import { Parallax } from 'react-scroll-parallax';
 
 
 
@@ -13,7 +13,9 @@ const Certificates = () => {
 
     return (
         <div className='certificate-container'>
-            <h1 className='certificate-title'>CERTIFICATES</h1>
+            <Parallax translateX={['1000px', '-300px']}>
+                <p className='certificate-title'>CERTIFICATES</p>
+            </Parallax>
             <div className='certificate-row'>
                 <div className='certficiate'>
                     <img onClick={() => setOpenFullStackModal(!openFullStackModal)} className='honor-certificate' src={FS} alt='Full Stack Honor Certificate' />
@@ -22,9 +24,6 @@ const Certificates = () => {
                     <img className='honor-certificate' src={BE} alt='Backend Honor Certificate' />
                 </div>
             </div>
-            <Modal openFullStackModal={openFullStackModal} >
-                Fancy
-            </Modal>
         </div>
     )
 };

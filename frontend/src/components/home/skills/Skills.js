@@ -1,11 +1,13 @@
 import './Skills.css';
-import { useState } from 'react';
+import { Parallax } from 'react-scroll-parallax';
 
 const Skills = () => {
 
     return (
         <div className='skill-container'>
-            <h1 className='skills-title'>SKILLS</h1>
+            <Parallax translateX={['1000px', '-300px']}>
+                <p className='skills-title'>SKILLS</p>
+            </Parallax>
             <div className='skill-row'>
                 <div className='skill-card'>
                     <h1>Frontend</h1>

@@ -33,6 +33,7 @@ h3,
 
 .App {
   background-color: #FEFEFE;
+  overflow-x: hidden;
 }
 
 .card-img-overlay .card-title {
@@ -117,6 +118,7 @@ Form {
 .site-footer {
   background-color: #CFCDCE;
   padding: 2rem;
+  width: 100vw;
 }
 
 .footer-social {

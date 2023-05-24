@@ -5,11 +5,15 @@ import Blackjack from '../../../app/assets/img/blackjack.png';
 import YouTubeSVG from '../../../app/assets/img/youtube.svg';
 import Pharmacy from '../../../app/assets/img/pharmacy.png';
 import './Projects.css';
+import { Parallax } from 'react-scroll-parallax';
 
 const ProjectDemoCards = () => {
     return (
         <div className='projects-container'>
-            <h1 className='project-title'>PROJECTS</h1>
+            <Parallax translateX={['-1000px', '300px']}>
+                <p className='project-title'>PROJECTS</p>
+            </Parallax>
+
             <div className='project-row'>
                 <div className='project-card'>
                     <div className='image-container'>
