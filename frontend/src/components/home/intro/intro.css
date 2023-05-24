@@ -1,0 +1,74 @@
+.introSectionContainer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introNameContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.animateIntroName {
+    font-family: valencia;
+    font-size: 100px;
+    animation: setAnimateIntroName .7s ease-in;
+}
+
+.hideIntroName {
+    font-family: valencia;
+    font-size: 100px;
+    opacity: 0;
+}
+
+@keyframes setAnimateIntroName {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.introJobTitleContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.hideIntroJobTitle {
+    font-family: AvenirRoman;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.animateIntroJobTitle {
+    font-family: AvenirRoman;
+    font-size: 20px;
+    animation: delayAnimation 1s, setAnimateIntroJobTitle .7s 1s ease-in;
+}
+
+@keyframes delayAnimation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes setAnimateIntroJobTitle {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}

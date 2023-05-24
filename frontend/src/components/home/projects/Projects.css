@@ -70,9 +70,9 @@
 }
 
 .project-title {
-    color: #CFCDCE;
+    color: rgb(238, 238, 238);
     font-size: 5rem;
-    font-weight: bold;
+    font-family: AvenirHeavy;
     display: flex;
     justify-content: center;
     margin-bottom: 30px;

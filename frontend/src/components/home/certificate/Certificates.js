@@ -13,7 +13,7 @@ const Certificates = () => {
 
     return (
         <div className='certificate-container'>
-            <h1 className='certificate-title'>Certificates</h1>
+            <h1 className='certificate-title'>CERTIFICATES</h1>
             <div className='certificate-row'>
                 <div className='certficiate'>
                     <img onClick={() => setOpenFullStackModal(!openFullStackModal)} className='honor-certificate' src={FS} alt='Full Stack Honor Certificate' />

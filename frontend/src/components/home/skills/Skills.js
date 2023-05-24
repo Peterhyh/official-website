@@ -5,7 +5,7 @@ const Skills = () => {
 
     return (
         <div className='skill-container'>
-            <h1 className='skills-title'>Skills</h1>
+            <h1 className='skills-title'>SKILLS</h1>
             <div className='skill-row'>
                 <div className='skill-card'>
                     <h1>Frontend</h1>

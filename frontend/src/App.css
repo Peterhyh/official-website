@@ -35,10 +35,6 @@ h3,
   background-color: #FEFEFE;
 }
 
-h2 {
-  color: #fff
-}
-
 .card-img-overlay .card-title {
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -95,7 +91,6 @@ h2 {
   position: relative;
 }
 
-h3,
 p {
   color: #fff;
 }
@@ -127,4 +122,24 @@ Form {
 .footer-social {
   color: #fff;
   font-weight: bold;
+}
+
+@font-face {
+  font-family: valencia;
+  src: url('./app/assets/fonts/Valencia.ttf');
+}
+
+@font-face {
+  font-family: AvenirRoman;
+  src: url('./app/assets/fonts/Avenir-Roman-12.ttf');
+}
+
+@font-face {
+  font-family: AvenirHeavy;
+  src: url('./app/assets/fonts/Avenir-Heavy-05.ttf');
+}
+
+@font-face {
+  font-family: AvenirLight;
+  src: url('./app/assets/fonts/Avenir-Light-07.ttf');
 }
