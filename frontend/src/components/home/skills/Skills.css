@@ -48,6 +48,13 @@
     border-radius: 500px;
 }
 
+
+.skillIcon {
+    border: 1px solid firebrick;
+    height: 50px;
+    width: 50px;
+}
+
 @media only screen and (max-width: 1040px) {
     .skill-card {
         height: 250px;

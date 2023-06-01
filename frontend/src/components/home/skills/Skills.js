@@ -1,5 +1,7 @@
 import './Skills.css';
 import { Parallax } from 'react-scroll-parallax';
+import HTML from '../../../app/assets/img/html.svg';
+import CSS from '../../../app/assets/img/css.svg';
 
 const Skills = () => {
 
@@ -8,7 +10,20 @@ const Skills = () => {
             <Parallax translateX={['1000px', '-300px']}>
                 <p className='skills-title'>SKILLS</p>
             </Parallax>
-            <div className='skill-row'>
+            <Parallax
+                translateX={[0, 100]}
+                easing={'easeOutQuad'}
+            >
+                <img className='skillIcon' src={HTML} alt='HTML' />
+                <img className='skillIcon' src={CSS} alt='CSS' />
+            </Parallax>
+        </div>
+    )
+};
+
+export default Skills;
+
+{/* <div className='skill-row'>
                 <div className='skill-card'>
                     <h1>Frontend</h1>
                     <div>
@@ -60,9 +75,4 @@ const Skills = () => {
                         </dl>
                     </div>
                 </div>
-            </div>
-        </div>
-    )
-};
-
-export default Skills;
+            </div> */}
