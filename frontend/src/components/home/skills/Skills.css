@@ -48,11 +48,24 @@
     border-radius: 500px;
 }
 
+.skillIconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
+}
 
 .skillIcon {
-    border: 1px solid firebrick;
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
+}
+
+.skillIcon:hover {
+    transition: ease-in-out;
+    transition-duration: .3s;
+    height: 200px;
+    width: 200px;
 }
 
 @media only screen and (max-width: 1040px) {
