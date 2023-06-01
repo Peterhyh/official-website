@@ -15,7 +15,7 @@ const Skills = () => {
 
     return (
         <div className='skill-container'>
-            <Parallax translateX={['1000px', '-300px']}>
+            <Parallax translateX={['1000px', '-300px']} >
                 <p className='skills-title'>SKILLS</p>
             </Parallax>
             <div className='skillIconContainer'>

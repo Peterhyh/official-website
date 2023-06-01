@@ -1,16 +1,8 @@
 .skill-container {
-    margin-top: 200px;
-    margin-bottom: 200px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-}
-
-.skill-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .skills-title {
@@ -22,50 +14,28 @@
     margin-bottom: 30px;
 }
 
-.skill-card {
-    background-color: #CFCDCE;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    box-shadow: 5px 5px 15px -5px;
-    height: 410px;
-    width: 410px;
-}
-
-.skill-card div {
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-    text-align: center;
-}
-
-.skill-card h1 {
-    align-self: center;
-    color: #FFF;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 500px;
-}
-
 .skillIconContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     margin: 50px;
+    padding: 50px;
 }
 
 .skillIcon {
     height: 100px;
     width: 100px;
+    transition: ease-out;
+    transition-duration: .2s;
+    margin: 50px;
 }
 
 .skillIcon:hover {
-    transition: ease-in-out;
-    transition-duration: .3s;
-    height: 200px;
-    width: 200px;
+    transition: ease-in;
+    transition-duration: .2s;
+    height: 120px;
+    width: 120px;
 }
 
 @media only screen and (max-width: 1040px) {
