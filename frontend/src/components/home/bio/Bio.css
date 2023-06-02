@@ -26,24 +26,36 @@
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
-    display: inline-block;
-    opacity: 1;
     font-family: AvenirHeavy;
 }
 
-@media only screen and (max-width: 1255px) {
-    .bioTitle {
-        font-size: 100px;
-    }
-}
 
 @media only screen and (max-width: 973px) {
+    .bio-description {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
     .bio-description {
         font-size: 1rem;
     }
 
     .bioTitle {
-        font-size: 48px;
+        font-size: 64px;
     }
 
+}
+
+@media only screen and (max-width: 500px) {
+    .bioTitle {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .bioTitle {
+        font-size: 48px;
+    }
 }

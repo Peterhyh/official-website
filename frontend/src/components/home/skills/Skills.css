@@ -15,32 +15,34 @@
     justify-content: center;
 }
 
-.skillIconContainer {
+.skillItem {
+    margin: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+.skillItemContainer {
     padding-left: 50px;
     padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-
+.skillIconTitle {
+    font-family: AvenirHeavy;
+}
 
 .skillIcon {
-    display: flex;
     height: 70px;
     width: 70px;
-    transition: ease-out;
-    transition-duration: .2s;
-    margin: 50px;
 }
 
-.skillIcon:hover {
-    transition: ease-in;
-    transition-duration: .2s;
-    height: 100px;
-    width: 100px;
-}
 
 @media only screen and (max-width: 1040px) {
     .skill-card {
@@ -62,9 +64,6 @@
 }
 
 @media only screen and (max-width: 973px) {
-    .skills-title {
-        font-size: 3rem;
-    }
 
     .skill-card {
         height: 170px;
@@ -76,10 +75,40 @@
         justify-content: center;
     }
 
+    .skillItem {
+        min-height: 100px;
+        min-width: 100px;
+    }
+
 }
 
-@media only screen and (max-width: 647px) {
+@media only screen and (max-width: 740px) {
+    .skills-title {
+        font-size: 64px;
+    }
+
     .skill-row {
         flex-wrap: wrap;
+    }
+
+    .skillItemContainer {
+        padding: 0;
+    }
+
+    .skillIcon {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .skills--title {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (max-width: 366px) {
+    .skills--title {
+        font-size: 48px;
     }
 }

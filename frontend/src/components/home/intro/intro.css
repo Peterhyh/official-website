@@ -12,7 +12,7 @@
 
 .animateIntroName {
     font-family: valencia;
-    font-size: 100px;
+    font-size: 90px;
     animation: setAnimateIntroName .7s ease-in;
 }
 

@@ -1,7 +1,7 @@
 import './Skills.css';
 import { Parallax } from 'react-scroll-parallax';
+import { motion } from 'framer-motion';
 import { useEffect, useState, useRef } from 'react';
-import { motion, useAnimate, usePresence } from 'framer-motion';
 import HTML from '../../../app/assets/img/html.svg';
 import CSS from '../../../app/assets/img/css.svg';
 import REACT from '../../../app/assets/img/react.svg';
@@ -12,60 +12,61 @@ import GITHUB from '../../../app/assets/img/github.svg';
 import MONGO from '../../../app/assets/img/mongodb.svg';
 import GIT from '../../../app/assets/img/git.svg';
 import PYTHON from '../../../app/assets/img/python.svg';
+import NODE from '../../../app/assets/img/nodejs.svg';
 
 const Skills = () => {
+    const [showIcons, setShowIcons] = useState();
 
-    const skillRef = useRef();
-
-    const [isPresence, safeToRemove] = usePresence();
-    const [scope, animate] = useAnimate();
-
+    const iconRef = useRef();
     useEffect(() => {
-        if (isPresence) {
-            const enterAnimation = async () => {
-                await animate('img', { opacity: [0, 1] }, { duration: 0.5, delay: 0.2 })
-            };
-            enterAnimation();
-        } else {
-            const exitAnimation = async () => {
-                await animate('img', { opacity: [1, 0] }, { duration: 0.5, delay: 0.2 })
-                safeToRemove();
-            };
-            exitAnimation();
-        }
+        const observer = new IntersectionObserver(entries => {
+            const entry = entries[0];
+            setShowIcons(entry.isIntersecting);
+        }, {
+            threshold: 0.2
+        });
+        observer.observe(iconRef.current);
     }, []);
 
+    const skillItems = [
+        { id: 1, title: 'HTML', img: HTML },
+        { id: 2, title: 'CSS', img: CSS },
+        { id: 3, title: 'React', img: REACT },
+        { id: 4, title: 'JavaScript', img: JS },
+        { id: 5, title: 'Docker', img: DOCKER },
+        { id: 6, title: 'Express.js', img: EXPRESS },
+        { id: 7, title: 'GitHub', img: GITHUB },
+        { id: 8, title: 'MongoDB', img: MONGO },
+        { id: 9, title: 'Git', img: GIT },
+        { id: 10, title: 'Python', img: PYTHON },
+        { id: 11, title: 'Node.js', img: NODE }
+    ];
 
     return (
         <div className='skill-container'>
             <Parallax translateX={['1000px', '-300px']} >
                 <p className='skills-title'>SKILLS</p>
             </Parallax>
-            {/* <div className={`${isIntersecting ? 'slideSkillIconContainerRight' : 'hideSlideSkillIconContainerRight'}`} ref={skillRef}> */}
 
-            <div className='skillIconContainer' ref={scope}>
-
-                <img className='skillIcon' src={HTML} alt='HTML' />
-
-                <img className='skillIcon' src={CSS} alt='CSS' />
-
-                <img className='skillIcon' src={REACT} alt='REACT' />
-
-                <img className='skillIcon' src={JS} alt='JavaScript' />
-
-                <img className='skillIcon' src={DOCKER} alt='DOCKER' />
-
-                <img className='skillIcon' src={EXPRESS} alt='EXPRESS' />
-
-                <img className='skillIcon' src={GITHUB} alt='GITHUB' />
-
-                <img className='skillIcon' src={MONGO} alt='MONGO' />
-
-                <img className='skillIcon' src={GIT} alt='GIT' />
-
-                <img className='skillIcon' src={PYTHON} alt='PYTHON' />
-
+            <div className='skillItemContainer' ref={iconRef}>
+                {showIcons
+                    ?
+                    skillItems.map((skillItem, i) => (
+                        <motion.div
+                            className='skillItem'
+                            key={skillItem.id}
+                            initial={{ opacity: 0, translateX: -50, translateY: -50 }}
+                            animate={{ opacity: 1, translateX: 0, translateY: 0 }}
+                            transition={{ duration: 0.3, delay: i * 0.1 }}
+                        >
+                            <img className='skillIcon' src={skillItem.img} alt='' />
+                            <h3 className='skillIconTitle'>{skillItem.title}</h3>
+                        </motion.div>
+                    ))
+                    : ''
+                }
             </div>
+
         </div>
     )
 };
