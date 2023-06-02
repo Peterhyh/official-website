@@ -13,6 +13,7 @@ import MONGO from '../../../app/assets/img/mongodb.svg';
 import GIT from '../../../app/assets/img/git.svg';
 import PYTHON from '../../../app/assets/img/python.svg';
 import NODE from '../../../app/assets/img/nodejs.svg';
+import FLASK from '../../../app/assets/img/flask.svg';
 
 const Skills = () => {
     const [showIcons, setShowIcons] = useState();
@@ -43,7 +44,8 @@ const Skills = () => {
         { id: 8, title: 'MongoDB', img: MONGO },
         { id: 9, title: 'Git', img: GIT },
         { id: 10, title: 'Python', img: PYTHON },
-        { id: 11, title: 'Node.js', img: NODE }
+        { id: 11, title: 'Node.js', img: NODE },
+        { id: 12, title: 'Flask', img: FLASK },
     ];
 
     return (
