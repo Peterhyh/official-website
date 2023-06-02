@@ -21,7 +21,11 @@ const Skills = () => {
     useEffect(() => {
         const observer = new IntersectionObserver(entries => {
             const entry = entries[0];
-            setShowIcons(entry.isIntersecting);
+            if (entry.isIntersecting) {
+                setShowIcons(true);
+            } else {
+                return null
+            };
         }, {
             threshold: 0.2
         });

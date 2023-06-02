@@ -11,16 +11,24 @@ const IntroSection = () => {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            setShowName(entry.isIntersecting);
-        })
+            if (entry.isIntersecting) {
+                setShowName(true);
+            } else {
+                return null;
+            };
+        });
         observer.observe(nameRef.current);
     }, []);
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            setShowJobTitle(entry.isIntersecting);
-        })
+            if (entry.isIntersecting) {
+                setShowJobTitle(true);
+            } else {
+                return null;
+            };
+        });
         observer.observe(jobTitleRef.current);
     }, []);
 
