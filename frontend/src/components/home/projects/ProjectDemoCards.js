@@ -16,6 +16,7 @@ const ProjectDemoCards = () => {
             img: Pharmacy,
             description: 'Fullstack MERN pharmacy database application allows you to store prescription information for patients. This application allows you to register as an authorized user to input patient information.',
             url: 'http://herbapharmacy.com',
+            github: 'https://github.com/Peterhyh/prescripton-database-2.0',
         },
         {
             id: 1,
@@ -23,6 +24,7 @@ const ProjectDemoCards = () => {
             img: SweetlyDental,
             description: 'Fullstack MERN pharmacy database application allows you to store prescription information for patients. This application allows you to register as an authorized user to input patient information.',
             url: 'http://sweetlydental.com',
+            github: 'https://github.com/Peterhyh/dental-website',
         },
     ];
 
@@ -43,11 +45,12 @@ const ProjectDemoCards = () => {
                                 <p>{project.description}</p>
                             </div>
                             <div className='projectIconContainer'>
-
-                                <img src={GitHubSVG} alt='Directing to source code on GitHub' />
-
-                                <img src={ComputerSVG} alt='Directing to project website' />
-
+                                <a href={project.github} target="_blank" rel="noopener">
+                                    <img src={GitHubSVG} alt='Directing to source code on GitHub' />
+                                </a>
+                                <a href={project.url} target="_blank" rel="noopener">
+                                    <img src={ComputerSVG} alt='Directing to project website' />
+                                </a>
                             </div>
                         </div>
                         <div className='projectImage'>
