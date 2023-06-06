@@ -14,13 +14,15 @@ const ProjectDemoCards = () => {
             id: 0,
             title: 'Herb-A-Pharmacy Demo',
             img: Pharmacy,
-            description: 'Fullstack MERN pharmacy database application allows you to store prescription information for patients. This application allows you to register as an authorized user to input patient information.'
+            description: 'Fullstack MERN pharmacy database application allows you to store prescription information for patients. This application allows you to register as an authorized user to input patient information.',
+            url: 'http://herbapharmacy.com',
         },
         {
             id: 1,
             title: 'Sweetly Dental Demo',
             img: SweetlyDental,
-            description: 'Fullstack MERN pharmacy database application allows you to store prescription information for patients. This application allows you to register as an authorized user to input patient information.'
+            description: 'Fullstack MERN pharmacy database application allows you to store prescription information for patients. This application allows you to register as an authorized user to input patient information.',
+            url: 'http://sweetlydental.com',
         },
     ];
 
@@ -40,12 +42,18 @@ const ProjectDemoCards = () => {
                             <div className='projectDescription'>
                                 <p>{project.description}</p>
                             </div>
+                            <div className='projectIconContainer'>
+
+                                <img src={GitHubSVG} alt='Directing to source code on GitHub' />
+
+                                <img src={ComputerSVG} alt='Directing to project website' />
+
+                            </div>
                         </div>
                         <div className='projectImage'>
                             <img src={project.img} alt='' />
                         </div>
                     </div>
-
                 </div>
 
             ))}

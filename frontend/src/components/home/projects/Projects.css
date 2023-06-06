@@ -74,18 +74,35 @@
 
 .projectIconContainer {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.projectIconContainer div img {
+.projectIconContainer img {
     height: 50px;
     width: 50px;
+    margin: 20px;
+    cursor: pointer;
 }
 
-.projectIconContainer div img:hover {
-    position: relative;
-    height: 70px;
-    width: 70px;
+.projectIconContainer img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 1260px) {
+    .projectTitle h1 {
+        font-size: 40px;
+        font-family: AvenirHeavy;
+    }
+}
+
+@media only screen and (max-width: 1034px) {
+    .projectContent {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 @media only screen and (max-width: 973px) {
@@ -103,6 +120,12 @@
     }
 }
 
+@media only screen and (max-width: 890px) {
+    .projectCard {
+        height: 100%;
+    }
+}
+
 @media only screen and (max-width: 740px) {
     .project-row {
         flex-wrap: wrap;
@@ -111,11 +134,50 @@
     .project-title {
         font-size: 64px;
     }
+
+    .projectTitle h1 {
+        font-size: 40px;
+        font-family: AvenirHeavy;
+    }
+
+    .projectDescription p {
+        font-family: AvenirLight;
+        font-size: 13px;
+        color: #000;
+    }
+
+    .projectImage img {
+        width: 400px;
+        height: 240px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     .project-title {
         font-size: 50px;
+    }
+
+    .projectTitle h1 {
+        font-size: 30px;
+        font-family: AvenirHeavy;
+    }
+
+    .projectImage img {
+        width: 300px;
+        height: 180px;
+    }
+
+}
+
+@media only screen and (max-width: 380px) {
+    .projectTitle h1 {
+        font-size: 25px;
+        font-family: AvenirHeavy;
+    }
+
+    .projectImage img {
+        width: 300px;
+        height: 180px;
     }
 }
 
