@@ -12,16 +12,28 @@ const Certificates = () => {
     const [openFullStackModal, setOpenFullStackModal] = useState(false);
 
     return (
-        <div className='certificate-container'>
+        <div className='certificateContainer'>
             <Parallax translateX={['1000px', '-300px']}>
                 <p className='certificate-title'>CERTIFICATES</p>
             </Parallax>
-            <div className='certificate-row'>
-                <div className='certficiate'>
+            <div className='certificateContents'>
+                <div className='certficiateSection'>
                     <img onClick={() => setOpenFullStackModal(!openFullStackModal)} className='honor-certificate' src={FS} alt='Full Stack Honor Certificate' />
+                    <div className='certficiateDescription'>
+                        <h1>Honors Certificate in Full Stack Web and Mobile Development</h1>
+                        <h3>
+                            Bootstrap | React | React Native | NodeJS | Express | MongoDB | Mongoose | Javascript | HTML | CSS
+                        </h3>
+                    </div>
                 </div>
-                <div className='certficiate'>
+                <div className='certficiateSection'>
                     <img className='honor-certificate' src={BE} alt='Backend Honor Certificate' />
+                    <div className='certficiateDescription'>
+                        <h1>Honors Certificate in Backend, SQL and DevOps with Python Bootcamp</h1>
+                        <h3>
+                            Python | Postgres | DevOps | AWS
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>

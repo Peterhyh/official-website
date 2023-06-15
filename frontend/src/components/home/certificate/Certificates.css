@@ -1,9 +1,14 @@
-.certificate-container {
+.certificateContainer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+}
+
+.certificateContents {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .certificate-title {
@@ -14,23 +19,45 @@
     justify-content: center;
 }
 
-.certficiate img {
-    box-shadow: 0 0 15px -5px;
-    cursor: pointer;
-    height: 300px;
-    width: auto;
+.certficiateSection {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
 }
 
-.certficiate img:hover {
+.certficiateSection img {
+    box-shadow: 0 0 15px -5px;
+    height: 400px;
+    margin-bottom: 30px;
+    width: auto;
+    transform: scale(1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.certficiateSection img:hover {
     transform: scale(1.1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
     box-shadow: 0 0 15px 0px;
 }
 
-.certificate-row {
+.certficiateDescription {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+.certficiateDescription h1 {
+    text-align: center;
+    font-family: AvenirHeavy;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.certficiateDescription h3 {
+    text-align: center;
 }
 
 
