@@ -62,9 +62,21 @@
 
 
 @media only screen and (max-width: 973px) {
-    .certficiate img {
-        width: 170px;
-        height: 200px;
+    .certficiateSection img {
+        margin-top: 30px;
+        height: 300px;
+    }
+
+    .certficiateDescription h1 {
+        font-size: 25px;
+    }
+
+    .certficiateDescription h3 {
+        font-size: 10px;
+    }
+
+    .certficiateSection {
+        flex-wrap: wrap-reverse;
     }
 }
 
