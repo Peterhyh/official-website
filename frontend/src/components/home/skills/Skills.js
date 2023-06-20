@@ -14,6 +14,8 @@ import GIT from '../../../app/assets/img/git.svg';
 import PYTHON from '../../../app/assets/img/python.svg';
 import NODE from '../../../app/assets/img/nodejs.svg';
 import FLASK from '../../../app/assets/img/flask.svg';
+import BOOTSTRAP from '../../../app/assets/img/bootstrap.png';
+import REST from '../../../app/assets/img/rest.png';
 
 const Skills = () => {
     const [showIcons, setShowIcons] = useState();
@@ -46,6 +48,8 @@ const Skills = () => {
         { id: 10, title: 'Python', img: PYTHON },
         { id: 11, title: 'Node.js', img: NODE },
         { id: 12, title: 'Flask', img: FLASK },
+        { id: 13, title: 'Bootstrap', img: BOOTSTRAP },
+        { id: 14, title: 'REST API', img: REST },
     ];
 
     return (
