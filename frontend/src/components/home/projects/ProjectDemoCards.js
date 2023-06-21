@@ -36,11 +36,13 @@ const ProjectDemoCards = () => {
 
             {projects.map((project, i) => (
                 <div className='projectCard'>
+
+                    <div className='projectTitle'>
+                        <h1>{project.title}</h1>
+                    </div>
                     <div className='projectContent'>
+
                         <div className='projectDescriptionContainer'>
-                            <div className='projectTitle'>
-                                <h1>{project.title}</h1>
-                            </div>
                             <div className='projectDescription'>
                                 <p>{project.description}</p>
                             </div>
@@ -56,6 +58,7 @@ const ProjectDemoCards = () => {
                         <div className='projectImage'>
                             <img src={project.img} alt='' />
                         </div>
+
                     </div>
                 </div>
 

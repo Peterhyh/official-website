@@ -12,10 +12,10 @@ const HomePage = () => {
         <div>
             <ParallaxProvider>
                 <IntroSection />
-                <ProfileContent />
                 <Skills />
                 <ProjectDemoCards />
                 <Certificates />
+                <ProfileContent />
                 <Contact />
             </ParallaxProvider>
         </div>

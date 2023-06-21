@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100%;
+    margin-bottom: 100px;
+    height: 100vh;
 }
 
 .certificateContents {
@@ -27,19 +28,11 @@
 
 .certficiateSection img {
     box-shadow: 0 0 15px -5px;
-    height: 400px;
     margin-bottom: 30px;
-    width: auto;
+    width: 250px;
     transform: scale(1);
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
-}
-
-.certficiateSection img:hover {
-    transform: scale(1.1);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-    box-shadow: 0 0 15px 0px;
 }
 
 .certficiateDescription {
