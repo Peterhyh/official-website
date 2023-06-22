@@ -39,7 +39,6 @@ const ProjectDemoCards = () => {
                         <h1>{project.title}</h1>
                     </div>
                     <div className='projectContent'>
-
                         <div className='projectDescriptionContainer'>
                             <div className='projectDescription'>
                                 <p>{project.description}</p>
@@ -56,7 +55,6 @@ const ProjectDemoCards = () => {
                         <div className='projectImage'>
                             <img src={project.img} alt='' />
                         </div>
-
                     </div>
                 </div>
 
