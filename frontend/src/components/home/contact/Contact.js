@@ -37,7 +37,7 @@ const Contact = () => {
 
     return (
         <div className='contactContainer' ref={iconRef}>
-            <Parallax translateX={['1000px', '-300px']}>
+            <Parallax translateX={['1000px', '-400px']}>
                 <p className='certificate-title'>CONTACTS</p>
             </Parallax>
             <div className='contactIconsContainer'>

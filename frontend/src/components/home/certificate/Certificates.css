@@ -1,15 +1,48 @@
-.certificateContainer {
+.certificate-titles-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.certficiate-content {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.certficiate-content img {
+    border-radius: 20px;
+    box-shadow: 0 0 15px -5px;
+    margin-bottom: 30px;
+    width: 250px;
+    transform: scale(1);
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.certifcate-titles-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 60px;
+    font-family: AvenirHeavy;
+}
+
+.certifcate-titles-container h3 {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    color: #B6B0B0;
+}
+
+.certificate-container {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 100px;
-    height: 100vh;
-}
-
-.certificateContents {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    height: 100%;
 }
 
 .certificate-title {
@@ -20,55 +53,21 @@
     justify-content: center;
 }
 
-.certficiateSection {
-    display: flex;
-    justify-content: center;
-    margin: 30px;
-}
-
-.certficiateSection img {
-    box-shadow: 0 0 15px -5px;
-    margin-bottom: 30px;
-    width: 250px;
-    transform: scale(1);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in;
-}
-
-.certficiateDescription {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #000;
-}
-
-.certficiateDescription h1 {
-    text-align: center;
-    font-family: AvenirHeavy;
-    font-size: 40px;
-    margin-left: 30px;
-}
-
-.certficiateDescription h3 {
-    text-align: center;
-}
-
-
-@media only screen and (max-width: 973px) {
-    .certficiateSection img {
+@media only screen and (max-width: 1222px) {
+    .certficiate-content img {
         margin-top: 30px;
         height: 300px;
     }
 
-    .certficiateDescription h1 {
+    .certifcate-titles-container h1 {
         font-size: 25px;
     }
 
-    .certficiateDescription h3 {
+    .certifcate-titles-container h3 {
         font-size: 10px;
     }
 
-    .certficiateSection {
+    .certficiate-content {
         flex-wrap: wrap-reverse;
     }
 }
@@ -79,7 +78,7 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
     .certificate-title {
         font-size: 50px;
     }
