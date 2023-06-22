@@ -32,7 +32,6 @@
 .certifcate-titles-container h3 {
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
     width: 100%;
     color: #B6B0B0;
 }
