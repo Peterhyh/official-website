@@ -1,8 +1,8 @@
-import './Bio.css';
+import './AboutMe.css';
 import { Parallax } from 'react-scroll-parallax';
 
 
-const ProfileContent = () => {
+const AboutMe = () => {
 
     return (
 
@@ -22,4 +22,4 @@ const ProfileContent = () => {
 
 }
 
-export default ProfileContent;
+export default AboutMe;
