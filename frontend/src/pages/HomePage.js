@@ -1,10 +1,10 @@
-import Certificates from '../components/home/certificate/Certificates';
-import AboutMe from '../components/home/AboutMe/AboutMe';
-import ProjectDemoCards from '../components/home/projects/ProjectDemoCards';
-import Skills from '../components/home/skills/Skills';
-import IntroSection from '../components/home/intro/IntroSection';
+import Certificates from '../features/home/certificate/Certificates';
+import AboutMe from '../features/home/AboutMe/AboutMe';
+import ProjectDemoCards from '../features/home/projects/ProjectDemoCards';
+import Skills from '../features/home/skills/Skills';
+import IntroSection from '../features/home/intro/IntroSection';
 import { ParallaxProvider } from 'react-scroll-parallax';
-import Contact from '../components/home/contact/Contact';
+import Contact from '../features/home/contact/Contact';
 
 
 const HomePage = () => {
