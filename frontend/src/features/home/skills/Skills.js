@@ -69,7 +69,12 @@ const Skills = () => {
                             animate={{ opacity: 1, translateX: 0, translateY: 0 }}
                             transition={{ duration: 0.3, delay: i * 0.1 }}
                         >
-                            <img className='skillIcon' src={skillItem.img} alt='' />
+                            <motion.div
+                                whileHover={{ scale: 1.2, rotate: 360 }}
+                                whileTap={{ scale: 0.8, rotate: -360 }}
+                            >
+                                <img className='skillIcon' src={skillItem.img} alt='' />
+                            </motion.div>
                             <h3 className='skillIconTitle'>{skillItem.title}</h3>
                         </motion.div>
                     ))
