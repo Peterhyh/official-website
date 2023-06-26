@@ -35,7 +35,7 @@ const AboutMe = () => {
                         <motion.div
                             initial={{ translateX: 1000, opacity: 0, skewX: 50 }}
                             animate={{ translateX: 0, opacity: 1, skewX: 0 }}
-                            transition={{ duration: 0.8 }}
+                            transition={{ duration: 1.5 }}
                         >
                             <p className='bio-description' >
                                 A full stack developer with a great passion for coding and building the best user experience.
@@ -45,8 +45,9 @@ const AboutMe = () => {
                                 an original idea of my own along the way.
                             </p>
                         </motion.div>
-                        : ''
+                        : null
                 }
+
             </div>
 
         </div >
