@@ -5,6 +5,7 @@ import Skills from '../features/home/skills/Skills';
 import IntroSection from '../features/home/intro/IntroSection';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Contact from '../features/home/contact/Contact';
+import ContactForm from '../components/ContactForm';
 
 
 const HomePage = () => {
@@ -17,6 +18,7 @@ const HomePage = () => {
                 <Certificates />
                 <AboutMe />
                 <Contact />
+                <ContactForm />
             </ParallaxProvider>
         </div>
     )

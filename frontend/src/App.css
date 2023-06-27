@@ -138,3 +138,16 @@ Form {
   font-family: AvenirLight;
   src: url('./app/assets/fonts/Avenir-Light-07.ttf');
 }
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  color: #000;
+  height: 500px;
+  width: 500px;
+}

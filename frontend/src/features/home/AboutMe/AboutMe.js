@@ -37,7 +37,7 @@ const AboutMe = () => {
                             animate={{ translateX: 0, opacity: 1, skewX: 0 }}
                             transition={{ duration: 1.5 }}
                         >
-                            <p className='bio-description' >
+                            <p className='about-me-description' >
                                 A full stack developer with a great passion for coding and building the best user experience.
                                 I also enjoy automotives, 3D printing, building gaming PC's, and programming with Arduino.
                                 I love discovering how something works and being able to replicate/build it myself and eventually
